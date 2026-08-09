@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "sourceId": "verve.veterans",
+  "name": "Veterans Resource Hub",
+  "classification": "civic",
+  "mentorSearchable": true,
+  "audiences": [
+    "high",
+    "higher-learning",
+    "adult",
+    "parent"
+  ],
+  "roles": [
+    "student",
+    "parent",
+    "educator"
+  ],
+  "homepage": "https://vervenveda.com/veterans.github.io/",
+  "repository": "vervenveda/veterans.github.io",
+  "inventoryAuthority": "provisional-root-anchor",
+  "resources": [
+    {
+      "id": "veterans-home",
+      "title": "Veterans Resource Hub",
+      "description": "Public gateway to veteran benefits, health care, housing, careers, education, family support, legal resources, and connected services.",
+      "url": "https://vervenveda.com/veterans.github.io/",
+      "audiences": [
+        "high",
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "veterans",
+        "public-services",
+        "benefits",
+        "education",
+        "community-support"
+      ],
+      "skills": [
+        "resource-navigation",
+        "public-service-literacy",
+        "benefits-research"
+      ],
+      "tags": [
+        "veterans",
+        "service-members",
+        "families",
+        "public-resources",
+        "active-expansion"
+      ],
+      "mentorEligible": true,
+      "featured": false,
+      "resourceType": "hub",
+      "learningValue": "supplemental",
+      "curricularWeight": "supplemental",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "highStakesDomain": "public-services"
+    }
+  ],
+  "mentorNotes": "PROVISIONAL FEDERATION ANCHOR. This repository is under active expansion. The root landing page is the only inventory authority exposed by this manifest at this stage. Do not infer that unlisted child apps, courses, tools, or directories are absent, obsolete, or non-recommendable. Replace this provisional inventory with a verified deep manifest after the repository upgrade pass is complete."
+}
