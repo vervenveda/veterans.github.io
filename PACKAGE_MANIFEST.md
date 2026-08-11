@@ -1,0 +1,12 @@
+# PACKAGE_MANIFEST.md
+
+Generated: 2026-08-11T03:23:22
+
+| File | Bytes | SHA-256 |
+|---|---:|---|
+| `CHANGELOG.md` | 827 | `864e075adc4f60a186cfb7193700548978c2be14f1835205dca54f7811a88acf` |
+| `README.md` | 634 | `9932bb3cfd70c934b4e70761f1f4d8926b04de36eb89b55eac25e6245cc1713d` |
+| `VALIDATION.md` | 1464 | `a2e22147b6428653ec9c10b76c064eac0bbeb7aa11bed0eb140504b7b89658a6` |
+| `docs/LOCATION_PRIVACY.md` | 625 | `0def9e10741aa68d337b366b5d4555b076145dc265df088d9b882e319de32f66` |
+| `docs/RESOURCE_RESEARCH.md` | 1525 | `8980465bc0ab50ef8fea290dcf8dc6be1a46c3ac86d2e9570b32fc6ca275dc28` |
+| `index.html` | 70351 | `ae8d2120e2dda1bc1b0c9f79a629aad802fdc5202a15cd2b7d3969bd7daab071` |
