@@ -2,730 +2,1036 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Veterans Resource Hub — One Door, No Wrong Door. A comprehensive public gateway to benefits, health care, housing, careers, family support, legal resources, education, recreation, and connected Verve N Veda services.">
-<meta name="theme-color" content="#10283a">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Veterans Career & Resource Hub — translate military experience into civilian career direction, professional materials, education, training, apprenticeships, employment, entrepreneurship, and connected veteran services.">
+<meta name="theme-color" content="#f4f0e7">
 <meta name="color-scheme" content="light">
+<meta name="application-version" content="2026.08.12-veterans-career-hub-v3.0">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>Veterans Resource Hub | One Door · No Wrong Door</title>
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(self), payment=(), usb=(), browsing-topics=()">
+<meta name="robots" content="index,follow">
+<title>Veterans Career & Resource Hub | One Door · No Wrong Door</title>
+<link rel="canonical" href="https://vervenveda.com/veterans.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Veterans Career & Resource Hub">
+<meta property="og:description" content="Service translated into a civilian next mission: career direction, skills translation, professional tools, education, employment, entrepreneurship, and veteran resources.">
+<meta property="og:url" content="https://vervenveda.com/veterans.github.io/">
 <style>
-:root{--navy:#10283a;--navy-deep:#081925;--forest:#294b40;--forest-deep:#19352d;--ivory:#f4efe4;--paper:#fbf8f1;--ink:#1d2825;--muted:#596661;--bronze:#a17d45;--bronze-pale:#e7d7b8;--red:#c8202f;--red-deep:#981824;--line:rgba(29,40,37,.16);--line-strong:rgba(29,40,37,.28);--shadow:0 18px 44px rgba(16,40,58,.09);--soft:0 8px 22px rgba(16,40,58,.07);--radius:7px;--max:1220px;--display:"Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;--sans:"Avenir Next","Segoe UI",system-ui,-apple-system,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px;font-synthesis:none}body{margin:0;min-width:300px;min-height:100vh;overflow-x:hidden;color:var(--ink);background:var(--ivory);font-family:var(--sans);font-size:16px;font-weight:400;line-height:1.68;-webkit-font-smoothing:antialiased}body.menu-open{overflow:hidden}a{color:inherit}button,input,select{font:inherit}button{color:inherit;cursor:pointer}h1,h2,h3{font-weight:400}[hidden]{display:none!important}:focus-visible{outline:3px solid var(--bronze);outline-offset:3px}.wrap{width:min(calc(100% - 32px),var(--max));margin:auto}.skip{position:fixed;left:14px;top:14px;z-index:4000;transform:translateY(-180%);padding:11px 14px;border-radius:7px;color:#fff;background:var(--navy-deep);text-decoration:none}.skip:focus{transform:none}
-.site-header{position:sticky;top:0;z-index:1200;border-top:3px solid var(--bronze);border-bottom:1px solid var(--line);background:rgba(244,239,228,.96);backdrop-filter:blur(18px);box-shadow:0 7px 22px rgba(16,40,58,.07)}.nav{min-height:74px;display:grid;grid-template-columns:minmax(220px,1fr) auto minmax(220px,1fr);align-items:center;gap:16px;padding:10px 0}.brand{justify-self:start;display:inline-flex;align-items:center;gap:12px;min-width:0;text-decoration:none}.brand-mark{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;border:1px solid var(--bronze);border-radius:7px;color:#fff;background:var(--navy);font-family:var(--display);font-size:17px;box-shadow:var(--soft)}.brand-copy{display:grid;line-height:1.05}.brand-copy strong{color:var(--navy-deep);font-size:14px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}.brand-copy small{margin-top:7px;color:var(--muted);font-size:11px;letter-spacing:.11em;text-transform:uppercase;white-space:nowrap}.site-id{justify-self:center;text-align:center;text-decoration:none}.site-id strong{display:block;color:var(--navy);font-family:var(--display);font-size:17px;letter-spacing:.15em;text-transform:uppercase}.site-id small{display:block;margin-top:4px;color:var(--bronze);font-size:11px;letter-spacing:.15em;text-transform:uppercase}.nav-actions{justify-self:end;display:flex;align-items:center;gap:8px}.header-link,.menu-button{min-height:42px;display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;border:1px solid var(--line-strong);border-radius:7px;color:var(--navy);background:rgba(255,255,255,.55);text-decoration:none;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.menu-button{width:44px;padding:0}.menu-lines,.menu-lines:before,.menu-lines:after{content:"";display:block;width:16px;height:1.5px;background:currentColor;transition:.18s}.menu-lines{position:relative}.menu-lines:before,.menu-lines:after{position:absolute;left:0}.menu-lines:before{top:-6px}.menu-lines:after{top:6px}.menu-button[aria-expanded=true] .menu-lines{background:transparent}.menu-button[aria-expanded=true] .menu-lines:before{transform:translateY(6px) rotate(45deg)}.menu-button[aria-expanded=true] .menu-lines:after{transform:translateY(-6px) rotate(-45deg)}
-.hero{padding:clamp(88px,10vw,132px) 18px clamp(76px,8vw,108px);border-bottom:1px solid var(--line);background:radial-gradient(circle at 50% 0,rgba(161,125,69,.13),transparent 29rem),linear-gradient(180deg,var(--paper),var(--ivory));text-align:center}.hero-inner{width:min(100%,920px);margin:auto}.service-mark{width:77px;height:77px;display:grid;place-items:center;margin:0 auto 24px;border:1px solid var(--bronze);border-radius:7px;color:#fff;background:var(--forest-deep);font-family:var(--display);font-size:24px;box-shadow:0 0 0 7px rgba(41,75,64,.06),var(--soft)}.eyebrow,.kicker{margin:0;color:var(--bronze);font-size:11px;letter-spacing:.22em;text-transform:uppercase}h1{margin:18px 0 0;color:var(--navy-deep);font-family:var(--display);font-size:clamp(55px,8.5vw,88px);line-height:.92;letter-spacing:-.035em}.hero-subtitle{margin:18px auto 0;color:var(--forest);font-size:14px;letter-spacing:.18em;text-transform:uppercase}.hero-lead{max-width:760px;margin:24px auto 0;color:var(--muted);font-size:17px;line-height:1.82}.crisis-button{width:min(100%,520px);min-height:52px;display:flex;align-items:center;justify-content:center;gap:11px;margin:30px auto 0;padding:12px 18px;border:1px solid var(--red-deep);border-radius:7px;color:#fff;background:var(--red);text-decoration:none;font-size:14px;letter-spacing:.07em;text-transform:uppercase;box-shadow:0 12px 28px rgba(200,32,47,.18)}.crisis-button:hover{background:var(--red-deep)}.crisis-button span{font-size:11px;letter-spacing:.04em;text-transform:none;opacity:.92}.hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:18px}.btn{min-height:46px;display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border:1px solid transparent;border-radius:7px;text-decoration:none;font-size:11px;letter-spacing:.07em;text-transform:uppercase}.btn-primary{color:#fff;background:var(--navy)}.btn-secondary{color:var(--navy);border-color:var(--line-strong);background:rgba(255,255,255,.6)}.hero-notes{width:min(100%,850px);display:grid;grid-template-columns:repeat(3,1fr);margin:33px auto 0;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:#fff}.hero-note{padding:16px;border-left:1px solid var(--line)}.hero-note:first-child{border-left:0}.hero-note strong{display:block;color:var(--navy);font-family:var(--display);font-size:24px}.hero-note span{display:block;margin-top:3px;color:var(--muted);font-size:11px}
-.quick-start{padding:33px 18px;background:var(--navy)}.quick-grid{width:min(100%,var(--max));margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.quick-link{min-height:82px;display:flex;flex-direction:column;justify-content:center;padding:14px;border:1px solid rgba(255,255,255,.14);border-radius:7px;color:#fff;text-decoration:none;text-align:center;background:rgba(255,255,255,.035)}.quick-link strong{font-family:var(--display);font-size:18px}.quick-link span{margin-top:4px;color:rgba(255,255,255,.69);font-size:11px}
-.section{padding:clamp(76px,8vw,108px) 18px}.section.alt{background:var(--paper);border-block:1px solid var(--line)}.section.dark{color:#fff;background:linear-gradient(145deg,var(--forest-deep),var(--navy-deep))}.section-inner{width:min(100%,var(--max));margin:auto}.section-heading{max-width:880px;margin:0 auto 38px;text-align:center}.section-heading h2{margin:16px auto 0;color:var(--navy-deep);font-family:var(--display);font-size:clamp(38px,5.8vw,66px);line-height:.96;letter-spacing:-.025em}.section.dark .section-heading h2{color:#fff}.section-intro{max-width:730px;margin:20px auto 0;color:var(--muted);font-size:15px;line-height:1.8}.section.dark .section-intro{color:rgba(255,255,255,.74)}
-.wing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.wing-card{min-height:300px;display:flex;flex-direction:column;padding:24px;border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:7px;background:#fff;box-shadow:var(--soft)}.wing-mark{width:48px;height:48px;display:grid;place-items:center;margin:0 auto 18px;border-radius:7px;color:#fff;background:var(--accent);font-family:var(--display);font-size:16px}.wing-card h3{margin:0;color:var(--navy-deep);font-family:var(--display);font-size:28px;text-align:center}.wing-card p{margin:12px 0 0;color:var(--muted);font-size:14px;text-align:center}.wing-links{display:grid;gap:7px;margin-top:20px}.wing-links a{min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 11px;border:1px solid var(--line);border-radius:7px;color:var(--navy);background:var(--paper);text-decoration:none;font-size:12px}.wing-links a span:last-child{color:var(--accent)}
-.directory-shell{padding:18px;border:1px solid var(--line);border-radius:7px;background:#fff;box-shadow:var(--shadow)}.directory-tools{display:grid;grid-template-columns:minmax(240px,1fr) 220px auto;gap:10px}.field,.tool-button{width:100%;min-height:48px;padding:0 14px;border:1px solid var(--line-strong);border-radius:7px;color:var(--ink);background:#fff;font-size:13px}.tool-button{width:auto;color:var(--navy)}.result-note{margin:14px 0 0;color:var(--muted);font-size:12px;text-align:center}.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.resource-card{min-height:230px;display:flex;flex-direction:column;padding:20px;border:1px solid var(--line);border-radius:7px;background:var(--paper);text-decoration:none}.resource-meta{display:flex;justify-content:space-between;gap:10px;color:var(--bronze);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.resource-card h3{margin:18px 0 0;color:var(--navy-deep);font-family:var(--display);font-size:25px;line-height:1.05}.resource-card p{margin:11px 0 0;color:var(--muted);font-size:13px}.resource-open{margin-top:auto;padding-top:18px;color:var(--forest);font-size:11px;letter-spacing:.07em;text-transform:uppercase}.empty{display:none;margin-top:18px;padding:28px;border:1px dashed var(--line-strong);border-radius:7px;color:var(--muted);text-align:center}.empty.show{display:block}
-.mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.mission-card{min-height:190px;padding:22px;border:1px solid rgba(255,255,255,.14);border-radius:7px;text-align:center;background:rgba(255,255,255,.04)}.mission-card span{display:block;color:var(--bronze-pale);font-family:var(--display);font-size:33px}.mission-card h3{margin:13px 0 0;color:#fff;font-family:var(--display);font-size:24px}.mission-card p{margin:9px 0 0;color:rgba(255,255,255,.7);font-size:13px}
-.network-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.network-card{min-height:190px;display:flex;flex-direction:column;padding:20px;border:1px solid var(--line);border-radius:7px;color:var(--ink);background:#fff;text-decoration:none}.network-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:7px;color:#fff;background:var(--navy);font-family:var(--display);font-size:14px}.network-card h3{margin:16px 0 0;color:var(--navy-deep);font-family:var(--display);font-size:23px}.network-card p{margin:8px 0 0;color:var(--muted);font-size:12px}.network-card strong{margin-top:auto;padding-top:16px;color:var(--bronze);font-size:11px;letter-spacing:.07em;text-transform:uppercase}.notice{margin-top:30px;padding:18px;border:1px solid var(--line);border-left:4px solid var(--bronze);border-radius:7px;color:var(--muted);background:#fff;font-size:12px}
-.site-footer{padding:36px 18px;color:#fff;background:var(--navy-deep)}.footer-inner{width:min(100%,var(--max));margin:auto;display:grid;grid-template-columns:1fr auto;gap:24px}.footer-title{margin:0;font-family:var(--display);font-size:25px}.footer-copy{margin:8px 0 0;color:rgba(255,255,255,.68);font-size:12px}.footer-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.footer-links a{padding:8px 10px;border:1px solid rgba(255,255,255,.16);border-radius:7px;color:rgba(255,255,255,.8);text-decoration:none;font-size:11px}
-.drawer-overlay{position:fixed;inset:0;z-index:2000;display:none;background:rgba(8,25,37,.55);backdrop-filter:blur(3px)}.drawer-overlay.open{display:block}.drawer{position:absolute;right:0;top:0;width:min(94vw,430px);height:100%;overflow:auto;padding:20px;color:var(--ink);background:var(--paper);border-left:1px solid var(--line)}.drawer-header{display:flex;align-items:center;justify-content:space-between;gap:14px}.drawer-title{margin:0;color:var(--navy);font-family:var(--display);font-size:28px}.close-button{width:42px;height:42px;border:1px solid var(--line-strong);border-radius:7px;background:#fff;font-size:22px}.drawer-intro{margin:13px 0 0;color:var(--muted);font-size:12px}.drawer-search{width:100%;min-height:46px;margin-top:15px;padding:0 13px;border:1px solid var(--line-strong);border-radius:7px;background:#fff}.menu-group{margin:20px 0 8px;color:var(--bronze);font-size:11px;letter-spacing:.14em;text-transform:uppercase}.drawer-nav{display:grid;gap:7px}.drawer-link{min-height:58px;display:grid;grid-template-columns:32px 1fr 16px;align-items:center;gap:10px;padding:10px;border:1px solid var(--line);border-radius:7px;background:#fff;text-decoration:none}.drawer-link i{width:32px;height:32px;display:grid;place-items:center;border-radius:7px;color:#fff;background:var(--navy);font-style:normal;font-family:var(--display);font-size:11px}.drawer-link strong{display:block;color:var(--navy);font-size:13px}.drawer-link small{display:block;margin-top:3px;color:var(--muted);font-size:11px}.drawer-link span:last-child{color:var(--bronze)}
-@media(max-width:1000px){.nav{grid-template-columns:1fr auto}.site-id{display:none}.wing-grid,.resource-grid{grid-template-columns:repeat(2,1fr)}.network-grid{grid-template-columns:repeat(3,1fr)}.mission-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.header-link{display:none}.brand-copy small{display:none}.hero-notes,.quick-grid{grid-template-columns:1fr 1fr}.directory-tools{grid-template-columns:1fr}.tool-button{width:100%}.network-grid{grid-template-columns:repeat(2,1fr)}.footer-inner{grid-template-columns:1fr}.footer-links{justify-content:flex-start}}@media(max-width:560px){.nav{min-height:66px}.brand-mark{width:42px;height:42px;flex-basis:42px}.hero{padding:72px 14px 68px}h1{font-size:clamp(46px,14vw,66px)}.crisis-button{flex-direction:column;gap:3px;font-size:13px}.hero-notes,.quick-grid,.wing-grid,.resource-grid,.network-grid,.mission-grid{grid-template-columns:1fr}.hero-note{border-left:0;border-top:1px solid var(--line)}.hero-note:first-child{border-top:0}.section{padding:66px 14px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+:root{
+  --paper:#f4f0e7;
+  --paper-bright:#fbf9f4;
+  --white:#fff;
+  --ink:#080b0f;
+  --ink-soft:#30413d;
+  --forest:#243d33;
+  --forest-deep:#15251f;
+  --gold:#b48b45;
+  --gold-pale:#e7d7b6;
+  --navy:#10243b;
+  --navy-2:#173b59;
+  --bronze:#9d7943;
+  --red:#a51f2a;
+  --red-deep:#781720;
+  --line:rgba(18,23,19,.14);
+  --line-strong:rgba(18,23,19,.25);
+  --muted:#66716c;
+  --shadow:0 22px 55px rgba(27,34,29,.09);
+  --shadow-small:0 11px 33px rgba(27,34,29,.07);
+  --max:1280px;
+  --radius:7px;
+  --radius-lg:11px;
+  --ticker-height:36px;
+  --header-height:72px;
+  --sticky-stack:calc(var(--ticker-height) + var(--header-height));
+  --display:"Iowan Old Style","Palatino Linotype",Palatino,Baskerville,Georgia,serif;
+  --ceremonial:Cinzel,Aboreto,"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:"Brandon Grotesque","Avenir Next",Avenir,Montserrat,"Segoe UI",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--sticky-stack) + 18px)}
+body{
+  margin:0;min-width:300px;overflow-x:hidden;color:var(--ink);background:var(--paper);
+  font-family:var(--sans);font-size:16px;line-height:1.64;font-weight:400;text-align:center;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility
+}
+body.menu-open{overflow:hidden}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+::selection{background:var(--gold-pale);color:var(--ink)}
+.shell{width:min(calc(100% - 48px),var(--max));margin-inline:auto}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.skip-link{position:fixed;top:9px;left:9px;z-index:4000;transform:translateY(-170%);padding:9px 14px;border-radius:var(--radius);color:#fff;background:var(--ink)}
+.skip-link:focus{transform:none}
 
-/* ===== CONNECTED VETERANS HUB v2 ===== */
-.location-shell,.launch-grid,.civic-grid,.bridge-grid{display:grid;gap:14px}
-.location-shell{grid-template-columns:.82fr 1.18fr;align-items:start}
-.location-panel,.local-results,.launch-card,.civic-card,.bridge-card{
-  border:1px solid var(--line);border-radius:7px;background:#fff;box-shadow:var(--soft)
+/* VNV network ticker */
+.network-ticker{
+  position:sticky;top:0;z-index:1500;height:var(--ticker-height);display:grid;
+  grid-template-columns:minmax(0,1fr) 40px;overflow:hidden;color:#f4ead1;
+  background:linear-gradient(90deg,#07101d,#10243b 48%,#07101d);
+  border-bottom:1px solid rgba(255,255,255,.13);box-shadow:0 4px 14px rgba(6,15,27,.15)
 }
-.location-panel,.local-results{padding:24px}
-.location-badge{
-  width:66px;height:66px;display:grid;place-items:center;margin:auto;border-radius:7px;
-  color:#fff;background:var(--forest-deep);font-family:var(--display);font-size:23px
+.network-ticker-viewport{min-width:0;overflow:hidden;mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%)}
+.network-ticker-track{width:max-content;height:100%;display:flex;align-items:center;white-space:nowrap;animation:ticker 28s linear infinite}
+.network-ticker:hover .network-ticker-track,.network-ticker:focus-within .network-ticker-track,.network-ticker[data-paused="true"] .network-ticker-track{animation-play-state:paused}
+.network-ticker-set{height:100%;display:flex;align-items:center;gap:22px;padding-inline:11px}
+.network-ticker-label{color:var(--gold-pale);font-family:var(--ceremonial);font-size:10px;letter-spacing:.25em;text-transform:uppercase}
+.network-ticker-app{min-height:28px;display:inline-flex;align-items:center;gap:7px;padding:0;border:0;background:transparent;color:#eef3f7;font-size:11px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.network-ticker-app::before{content:"";width:3px;height:3px;border-radius:50%;background:var(--gold)}
+.network-ticker-app:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.ticker-control{width:40px;height:var(--ticker-height);display:grid;place-items:center;border:0;border-left:1px solid rgba(255,255,255,.13);color:#f4ead1;background:rgba(0,0,0,.14)}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* VNV header */
+.site-header{
+  position:sticky;top:var(--ticker-height);z-index:1400;height:var(--header-height);
+  border-bottom:1px solid var(--line);background:rgba(244,240,231,.96);
+  -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)
 }
-.location-panel h3,.local-results h3,.launch-card h3,.civic-card h3,.bridge-card h3{
-  margin:16px 0 0;color:var(--navy-deep);font-family:var(--display);font-size:28px;text-align:center
-}
-.location-panel>p,.local-results>p,.launch-card p,.civic-card p,.bridge-card p{
-  color:var(--muted);font-size:13px;text-align:center
-}
-.location-actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px}
+.header-inner{height:100%;display:grid;grid-template-columns:minmax(255px,1fr) auto minmax(48px,1fr);align-items:center;column-gap:24px}
+.brand{justify-self:start;min-width:0;max-width:400px;display:inline-flex;align-items:center;gap:12px;color:var(--ink);text-align:left}
+.brand-mark{width:44px;height:36px;flex:0 0 44px;display:grid;place-items:center;border:1px solid var(--ink);border-radius:var(--radius);color:#fff;background:var(--ink);font-family:var(--ceremonial);font-size:17px;letter-spacing:.07em}
+.brand-copy{min-width:0;display:grid;gap:3px;line-height:1.05}
+.brand-name{overflow:hidden;color:var(--ink);font-family:var(--ceremonial);font-size:15px;letter-spacing:.08em;text-overflow:ellipsis;text-transform:uppercase;white-space:nowrap}
+.brand-sub{overflow:hidden;color:var(--ink-soft);font-size:9px;letter-spacing:.12em;text-overflow:ellipsis;text-transform:uppercase;white-space:nowrap}
+.header-links{display:flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap}
+.header-links a,.header-links button{min-height:40px;display:inline-flex;align-items:center;padding:7px 10px;border:0;border-radius:var(--radius);color:var(--ink-soft);background:transparent;font-size:11px;font-weight:500;letter-spacing:.075em;text-transform:uppercase}
+.header-links a:hover,.header-links button:hover{color:var(--ink);background:var(--white)}
+.header-links .career-link{color:#76551f}
+.menu-button{justify-self:end;width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--line-strong);border-radius:var(--radius);color:var(--ink);background:transparent}
+.menu-lines,.menu-lines::before,.menu-lines::after{content:"";display:block;width:14px;height:1.5px;border-radius:7px;background:var(--ink);transition:.18s}
+.menu-lines{position:relative}.menu-lines::before,.menu-lines::after{position:absolute;left:0}.menu-lines::before{top:-6px}.menu-lines::after{top:6px}
+.menu-button[aria-expanded="true"] .menu-lines{background:transparent}
+.menu-button[aria-expanded="true"] .menu-lines::before{transform:translateY(6px) rotate(45deg)}
+.menu-button[aria-expanded="true"] .menu-lines::after{transform:translateY(-6px) rotate(-45deg)}
+
+.breadcrumb-bar{border-bottom:1px solid var(--line);background:var(--paper-bright)}
+.breadcrumbs{min-height:38px;display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;color:var(--muted);font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.breadcrumbs a:hover{color:var(--gold)}
+
+.crisis-strip{padding:8px 14px;color:#fff;background:var(--red-deep);font-size:11px;letter-spacing:.04em}
+.crisis-strip a{text-decoration:underline;text-underline-offset:3px}
+
+/* Drawer */
+.drawer-bg{position:fixed;inset:0;z-index:2400;visibility:hidden;opacity:0;background:rgba(7,12,17,.79);backdrop-filter:blur(8px);transition:.18s}
+.drawer-bg.open{visibility:visible;opacity:1}
+.drawer{position:absolute;right:0;top:0;width:min(520px,100%);height:100%;overflow:auto;padding:26px 22px 40px;color:#fff;background:linear-gradient(180deg,#10263b,#06101a);box-shadow:-24px 0 70px rgba(0,0,0,.36);transform:translateX(100%);transition:.2s;text-align:left}
+.drawer-bg.open .drawer{transform:none}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.drawer h2{margin:0;font:500 29px/1.05 var(--display)}
+.drawer-close{width:42px;height:42px;border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);color:#fff;background:rgba(255,255,255,.04);font-size:1.3rem}
+.drawer>p{color:rgba(255,255,255,.68);font-size:13px}
+.drawer-search{width:100%;min-height:47px;padding:0 13px;border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);color:#fff;background:rgba(255,255,255,.06)}
+.drawer-search::placeholder{color:rgba(255,255,255,.48)}
+.menu-group{margin:22px 0 8px;color:var(--gold-pale);font-size:10px;font-weight:600;letter-spacing:.11em;text-transform:uppercase}
+.menu-list{display:grid;gap:7px}
+.menu-link{display:grid;grid-template-columns:40px minmax(0,1fr) 20px;align-items:center;gap:10px;padding:10px;border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);background:rgba(255,255,255,.045)}
+.menu-link i{width:38px;height:36px;display:grid;place-items:center;border-radius:var(--radius);background:rgba(231,215,182,.13);font-style:normal;font-size:11px}
+.menu-link strong{display:block;font-size:14px;font-weight:500}.menu-link small{display:block;margin-top:3px;color:rgba(255,255,255,.58);font-size:11px;line-height:1.4}
+
+/* Hero */
+.hero{min-height:calc(100svh - var(--sticky-stack) - 66px);display:grid;align-items:stretch;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(circle at 50% 1%,rgba(180,139,69,.14),transparent 31rem),linear-gradient(180deg,var(--paper-bright),#f7f3eb)}
+.hero-inner{min-height:inherit;padding:clamp(56px,8vh,92px) 0 24px;display:grid;grid-template-rows:1fr auto;gap:30px}
+.hero-stage{align-self:center;display:grid;justify-items:center;gap:30px}
+.eyebrow,.kicker{margin:0;color:var(--gold);font-family:var(--ceremonial);font-size:clamp(11px,.85vw,13px);font-weight:500;letter-spacing:.19em;text-transform:uppercase}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:500;letter-spacing:.01em;text-wrap:balance}
+h1{margin-top:20px;max-width:1050px;color:var(--forest-deep);font-size:clamp(54px,7.5vw,101px);line-height:.9}
+.hero-subtitle{margin-top:16px;color:var(--navy-2);font-family:var(--ceremonial);font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.hero-lead{max-width:800px;margin:0;color:var(--ink-soft);font-family:var(--display);font-size:clamp(18px,1.7vw,23px);line-height:1.58}
+.hero-actions,.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:11px}
+.button{min-height:46px;display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border:1px solid transparent;border-radius:var(--radius);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;transition:.17s}
+.button:hover{transform:translateY(-2px)}
+.button-primary{color:#fff;background:var(--ink);box-shadow:var(--shadow-small)}
+.button-primary:hover{background:var(--forest)}
+.button-secondary{color:var(--ink);background:transparent;border-color:var(--line-strong)}
+.button-secondary:hover{background:#fff}
+.button-career{color:#14283d;background:linear-gradient(145deg,#ead9b8,#caa96d);border-color:#d8bf91}
+.hero-stat-grid{width:min(100%,1080px);display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:rgba(255,255,255,.65)}
+.hero-stat{padding:16px;border-left:1px solid var(--line)}
+.hero-stat:first-child{border-left:0}
+.hero-stat strong{display:block;color:var(--forest-deep);font-family:var(--display);font-size:18px;font-weight:500}
+.hero-stat span{display:block;margin-top:5px;color:var(--muted);font-size:12px;line-height:1.5}
+.scroll-cue{display:inline-grid;justify-items:center;gap:7px;margin-inline:auto;color:var(--ink-soft);border:0;background:transparent;font-family:var(--ceremonial);font-size:9px;letter-spacing:.16em;text-transform:uppercase}
+.scroll-cue::after{content:"";width:1px;height:27px;background:linear-gradient(var(--gold),transparent)}
+
+/* Sections */
+.section{padding:clamp(82px,8vw,116px) 20px}
+.section-alt{background:var(--paper-bright);border-block:1px solid var(--line)}
+.section-dark{color:#fff;background:linear-gradient(145deg,#10263b,#071521)}
+.section-inner{width:min(100%,var(--max));margin:auto}
+.heading{max-width:920px;margin:0 auto 46px}
+.heading h2{margin:11px auto 0;color:var(--forest-deep);font-size:clamp(38px,4.8vw,70px);line-height:1.02}
+.heading p{max-width:790px;margin:18px auto 0;color:var(--ink-soft);font-size:14px;line-height:1.75}
+.section-dark .heading h2{color:#fff}.section-dark .heading p{color:rgba(255,255,255,.72)}.section-dark .kicker{color:var(--gold-pale)}
+
+/* Mission path */
+.mission-path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mission-card{min-height:340px;display:flex;flex-direction:column;align-items:center;padding:27px 23px;border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:var(--radius-lg);background:#fff;box-shadow:var(--shadow-small)}
+.mission-step{width:50px;height:50px;display:grid;place-items:center;border-radius:var(--radius);color:#fff;background:var(--accent);font-family:var(--ceremonial);font-size:12px}
+.mission-card h3{margin-top:18px;color:var(--forest-deep);font-size:28px}.mission-card p{color:var(--muted);font-size:12px}
+.mission-links{width:100%;display:grid;gap:7px;margin-top:auto;padding-top:17px}
+.mission-links a{min-height:42px;display:flex;align-items:center;justify-content:center;padding:8px 11px;border:1px solid var(--line-strong);border-radius:var(--radius);color:var(--forest-deep);background:#faf8f2;font-size:10px;font-weight:600;text-transform:uppercase}
+.mission-links a.primary{color:#fff;background:var(--accent);border-color:var(--accent)}
+
+/* Skills notebook */
+.notebook-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:18px;align-items:start}
+.notebook-info,.notebook-panel{padding:28px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff;box-shadow:var(--shadow)}
+.notebook-info{text-align:left}
+.notebook-info h3,.notebook-panel h3{color:var(--forest-deep);font-size:34px}
+.notebook-info p,.notebook-panel>p{color:var(--muted);font-size:13px}
+.security-note{margin-top:18px;padding:14px;border-left:4px solid var(--red);background:#fff5f4;color:#69454a;font-size:11px;line-height:1.65}
+.notebook-form{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.field{min-width:0;width:100%;min-height:47px;padding:0 13px;border:1px solid var(--line-strong);border-radius:var(--radius);color:var(--ink);background:#fff}
+textarea.field{min-height:112px;padding:12px;resize:vertical;line-height:1.5}
+.notebook-form .full{grid-column:1/-1}
+.form-label{display:block;margin-bottom:5px;color:var(--muted);font-size:9px;letter-spacing:.1em;text-transform:uppercase;text-align:left}
+.form-actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.form-actions button{min-height:43px;border:1px solid var(--line-strong);border-radius:var(--radius);background:#faf8f2;color:var(--ink);font-size:10px;font-weight:600;text-transform:uppercase}
+.form-actions button.primary{color:#fff;background:var(--navy);border-color:var(--navy)}
+.progress-board{margin-top:20px;display:grid;gap:8px;text-align:left}
+.progress-row{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:9px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:var(--radius);background:#faf8f2}
+.progress-row input{width:18px;height:18px}.progress-row strong{font-size:12px}.progress-row small{color:var(--muted);font-size:10px}
+.progress-score{margin-top:12px;color:var(--bronze);font-family:var(--ceremonial);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+
+/* Tracks */
+.track-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.track-card{min-height:300px;display:flex;flex-direction:column;padding:24px;border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:var(--radius-lg);background:#fff;box-shadow:var(--shadow-small);text-align:left}
+.track-card .kicker{font-size:9px}.track-card h3{margin-top:9px;color:var(--forest-deep);font-size:28px}.track-card p{color:var(--muted);font-size:12px}
+.track-links{display:grid;gap:7px;margin-top:auto;padding-top:14px}
+.track-links a{min-height:41px;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;border:1px solid var(--line);border-radius:var(--radius);color:var(--navy);background:#faf8f2;font-size:10px}
+
+/* Dynamic professional tools */
+.catalog{padding:20px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff}
+.toolbar{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(190px,.65fr) auto;gap:9px}
+.tool-button{min-height:47px;padding:0 13px;border:1px solid var(--line-strong);border-radius:var(--radius);color:var(--ink);background:#faf8f2;font-size:11px}
+.status{margin:15px auto;color:var(--muted);font-size:12px}
+.tool-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.tool-card{min-height:260px;display:flex;flex-direction:column;align-items:center;padding:20px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff}
+.tool-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:var(--radius);color:#fff;background:var(--navy);font-family:var(--ceremonial);font-size:10px}
+.badge{margin-top:12px;color:#8a6a36;font-size:9px;letter-spacing:.1em;text-transform:uppercase}
+.tool-card h3{margin-top:7px;color:var(--forest-deep);font-size:22px}.tool-card p{color:var(--muted);font-size:12px}
+.destination{margin-top:auto;color:var(--muted);font-size:9px;letter-spacing:.06em;text-transform:uppercase}
+.tool-link{width:100%;min-height:42px;display:flex;align-items:center;justify-content:center;margin-top:11px;border:1px solid var(--line-strong);border-radius:var(--radius);color:var(--forest-deep);background:#faf8f2;font-size:10px;font-weight:600;text-transform:uppercase}
+.empty{display:none;padding:40px 12px;color:var(--muted)}.empty.show{display:block}
+
+/* Services */
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.service-card{min-height:290px;display:flex;flex-direction:column;padding:23px;border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:var(--radius-lg);background:#fff;text-align:left}
+.service-card h3{color:var(--forest-deep);font-size:27px}.service-card p{color:var(--muted);font-size:12px}
+.service-links{display:grid;gap:7px;margin-top:auto;padding-top:12px}
+.service-links a{min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;border:1px solid var(--line);border-radius:var(--radius);background:#faf8f2;color:var(--navy);font-size:10px}
+
+/* Official directory */
+.directory-shell{padding:20px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff}
+.directory-tools{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(190px,.65fr) auto;gap:9px}
+.resource-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:18px}
+.resource-card{min-height:235px;display:flex;flex-direction:column;padding:20px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#faf8f2;text-align:left}
+.resource-meta{display:flex;justify-content:space-between;gap:8px;color:var(--bronze);font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+.resource-card h3{margin-top:13px;color:var(--forest-deep);font-size:24px}.resource-card p{color:var(--muted);font-size:12px}
+.resource-open{margin-top:auto;padding-top:13px;color:var(--navy);font-size:10px;font-weight:600;text-transform:uppercase}
+
+/* Location */
+.location-shell{display:grid;grid-template-columns:.82fr 1.18fr;gap:18px;align-items:start}
+.location-panel,.local-results{padding:25px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff;box-shadow:var(--shadow-small)}
+.location-panel h3,.local-results h3{color:var(--forest-deep);font-size:30px}.location-panel p,.local-results p{color:var(--muted);font-size:12px}
+.location-actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:16px}
 .location-entry{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;margin-top:12px}
-.location-label{display:block;margin-top:22px;color:var(--bronze);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
-.location-status{margin-top:14px;padding:12px;border:1px solid var(--line);border-radius:7px;background:var(--paper);color:var(--muted);font-size:12px;line-height:1.6}
-.location-privacy{margin-top:14px;padding:12px;border-left:4px solid var(--bronze);background:#fffaf0;color:var(--muted);font-size:11px;line-height:1.6;text-align:left}
-.local-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:16px}
-.local-card{min-height:170px;display:flex;flex-direction:column;padding:16px;border:1px solid var(--line);border-radius:7px;background:var(--paper);text-align:center}
-.local-card b{color:var(--navy);font-family:var(--display);font-size:18px}
-.local-card span{display:block;margin-top:6px;color:var(--muted);font-size:11px;line-height:1.55}
-.local-links{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:12px}
-.local-links a{padding:7px 9px;border:1px solid var(--line);border-radius:7px;color:var(--navy);background:#fff;text-decoration:none;font-size:10px;text-transform:uppercase;letter-spacing:.05em}
+.location-status{margin-top:13px;padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:#faf8f2;color:var(--muted);font-size:11px}
+.location-privacy{margin-top:12px;padding:12px;border-left:4px solid var(--gold);background:#fffaf0;color:var(--muted);font-size:10px;line-height:1.6;text-align:left}
+.local-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:15px}
+.local-card{min-height:165px;display:flex;flex-direction:column;padding:15px;border:1px solid var(--line);border-radius:var(--radius);background:#faf8f2}
+.local-card b{color:var(--navy);font-family:var(--display);font-size:17px}.local-card span{display:block;margin-top:5px;color:var(--muted);font-size:10px}
+.local-links{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:11px}
+.local-links a{padding:7px 9px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;color:var(--navy);font-size:9px;text-transform:uppercase}
 
-.launch-grid{grid-template-columns:repeat(4,1fr)}
-.launch-card{min-height:330px;display:flex;flex-direction:column;padding:22px;text-align:center}
-.launch-step{width:48px;height:48px;display:grid;place-items:center;margin:auto;border-radius:7px;color:#fff;background:var(--navy);font-family:var(--display);font-size:18px}
-.launch-card h3{font-size:25px}
-.launch-links{display:grid;gap:7px;margin-top:auto;padding-top:18px}
-.launch-links a{padding:10px 11px;border:1px solid var(--line);border-radius:7px;color:var(--navy);background:var(--paper);text-decoration:none;font-size:11px}
-.launch-links a.primary-path{color:#fff;background:var(--forest-deep);border-color:var(--forest-deep)}
+/* Footer */
+.notice{margin-top:24px;padding:16px;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:var(--radius);color:var(--muted);background:#fff;font-size:11px;text-align:left}
+.final{color:#fff;background:radial-gradient(circle at 50% 0,rgba(231,215,182,.15),transparent 29rem),linear-gradient(145deg,#26493e,#10263b)}
+.final h2{max-width:900px;margin:12px auto 0;color:#fff;font-size:clamp(40px,5vw,70px)}.final p{max-width:780px;margin:18px auto;color:rgba(255,255,255,.78)}
+footer{padding:36px 20px;color:rgba(255,255,255,.64);background:#030a11;border-top:1px solid rgba(255,255,255,.08)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left}.footer-inner strong{color:#fff;font-family:var(--ceremonial);font-weight:500}.footer-inner small{font-size:11px}.footer-links{display:flex;justify-content:flex-end;gap:13px;flex-wrap:wrap;font-size:11px}
+.toast{position:fixed;left:50%;bottom:20px;z-index:3000;width:min(calc(100% - 32px),520px);transform:translate(-50%,100px);padding:10px 14px;border-radius:var(--radius);color:#fff;background:#07131f;box-shadow:var(--shadow);font-size:12px;opacity:0;visibility:hidden;pointer-events:none;transition:.2s}.toast.show{transform:translate(-50%,0);opacity:1;visibility:visible}
 
-.civic-grid{grid-template-columns:1.2fr .8fr}
-.civic-card{padding:28px}
-.civic-card.feature{background:linear-gradient(145deg,var(--navy),var(--forest-deep));color:#fff;border-color:rgba(255,255,255,.12)}
-.civic-card.feature h3{color:#fff;font-size:36px}
-.civic-card.feature p{color:rgba(255,255,255,.76)}
-.civic-points{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:18px}
-.civic-point{padding:12px;border:1px solid rgba(255,255,255,.14);border-radius:7px;color:#fff;background:rgba(255,255,255,.04);font-size:12px;text-align:center}
-.civic-links{display:grid;gap:8px;margin-top:20px}
-.civic-links a{min-height:44px;display:flex;align-items:center;justify-content:center;padding:10px;border:1px solid var(--line);border-radius:7px;text-decoration:none;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
-.civic-card.feature .civic-links a{color:#fff;border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.06)}
-.civic-card:not(.feature) .civic-links a{color:var(--navy);background:var(--paper)}
-
-.bridge-grid{grid-template-columns:repeat(3,1fr)}
-.bridge-card{min-height:270px;display:flex;flex-direction:column;padding:22px;text-align:center}
-.bridge-mark{width:46px;height:46px;display:grid;place-items:center;margin:auto;border-radius:7px;color:#fff;background:var(--red-deep);font-family:var(--display)}
-.bridge-card .launch-links{margin-top:auto}
-.research-note{max-width:850px;margin:22px auto 0;color:var(--muted);font-size:11px;line-height:1.6;text-align:center}
-
-.section-heading{margin-bottom:55px}
-.section-heading .kicker{
-  font-family:var(--display);font-size:clamp(1.3rem,2.8vw,2.1rem);line-height:1.2;
-  letter-spacing:.035em;text-transform:none
+@media(max-width:1080px){
+  .header-inner{grid-template-columns:minmax(0,1fr) auto}.header-links{display:none}
+  .mission-path,.service-grid,.tool-grid,.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .track-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .notebook-grid,.location-shell{grid-template-columns:1fr}
 }
-.section-heading h2{
-  max-width:760px;margin:14px auto 0;font-family:var(--sans);
-  font-size:clamp(1rem,1.7vw,1.28rem);font-weight:500;line-height:1.6;letter-spacing:.01em
+@media(max-width:760px){
+  .hero-stat-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-stat:nth-child(3){border-left:0;border-top:1px solid var(--line)}.hero-stat:nth-child(4){border-top:1px solid var(--line)}
+  .toolbar,.directory-tools{grid-template-columns:1fr}.toolbar .field:first-child{grid-column:auto}
 }
-.section-heading .section-intro{margin-top:14px;font-size:13px}
-
-@media(max-width:1050px){
-  .launch-grid{grid-template-columns:repeat(2,1fr)}
+@media(max-width:600px){
+  .shell{width:min(calc(100% - 24px),var(--max))}
+  .brand-sub{display:none}.brand-name{font-size:13px}
+  .hero-inner{padding:44px 0 22px}.hero-stage{gap:22px}
+  h1{font-size:clamp(46px,15vw,70px)}
+  .hero-actions,.actions{display:grid;width:100%}.hero-actions .button,.actions .button{width:100%}
+  .hero-stat-grid,.mission-path,.track-grid,.service-grid,.tool-grid,.resource-grid,.local-grid{grid-template-columns:1fr}
+  .hero-stat{border-left:0;border-top:1px solid var(--line)}.hero-stat:first-child{border-top:0}
+  .notebook-form,.form-actions,.location-entry{grid-template-columns:1fr}.notebook-form .full,.form-actions{grid-column:auto}
+  .section{padding:64px 12px}
+  .footer-inner{justify-content:center;text-align:center;flex-direction:column}.footer-links{justify-content:center}
 }
-@media(max-width:860px){
-  .location-shell,.civic-grid{grid-template-columns:1fr}
-}
-@media(max-width:650px){
-  .local-grid,.launch-grid,.bridge-grid,.civic-points{grid-template-columns:1fr}
-  .location-entry{grid-template-columns:1fr}
-  .location-actions{flex-direction:column}
-  .location-actions .btn{width:100%}
-}
-@media print{
-  .location-panel,.location-actions,.menu-button,.drawer-overlay{display:none!important}
-  .local-grid,.launch-grid,.bridge-grid{grid-template-columns:repeat(2,1fr)}
-}
-
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
-<body>
-<a class="skip" href="#main">Skip to main content</a>
-<header class="site-header"><div class="wrap nav"><a class="brand" href="https://vervenveda.com/" aria-label="Return to Verve N Veda public gateway"><span class="brand-mark">V</span><span class="brand-copy"><strong>Verve N Veda</strong><small>Public service network</small></span></a><a class="site-id" href="#top"><strong>Veterans Resource Hub</strong><small>One Door · No Wrong Door</small></a><div class="nav-actions"><a class="header-link" href="#nearby">Near Me</a><a class="header-link" href="#career-education">Career & Education</a><a class="header-link" href="#civic">Civic Life</a><button class="menu-button" id="menuButton" type="button" aria-label="Open complete directory" aria-expanded="false" aria-controls="drawer"><span class="menu-lines"></span></button></div></div></header>
-<main id="main">
-<section class="hero" id="top"><div class="hero-inner"><div class="service-mark">V</div><p class="eyebrow">A Verve N Veda public-service hall</p><h1>Veterans Resource Hub</h1><p class="hero-subtitle">One Door · No Wrong Door</p><p class="hero-lead">A calm, comprehensive gateway for Veterans, service members, families, caregivers, survivors, and supporters seeking benefits, health care, housing, employment, education, legal information, community, civic participation, business pathways, and a clear next step.</p><a class="crisis-button" href="https://www.veteranscrisisline.net/" target="_blank" rel="noopener noreferrer">Veterans Crisis Support <span>Call 988, then press 1 · Text 838255 · Confidential help 24/7</span></a><div class="hero-actions"><a class="btn btn-primary" href="#nearby">Find Veteran Help Near Me</a><a class="btn btn-secondary" href="https://www.va.gov/" target="_blank" rel="noopener noreferrer">Open VA.gov</a><a class="btn btn-secondary" href="#career-education">Career & Education Path</a></div><div class="hero-notes"><div class="hero-note"><strong>One Door</strong><span>Start here without knowing the exact agency.</span></div><div class="hero-note"><strong>No Wrong Door</strong><span>Every section offers another useful route forward.</span></div><div class="hero-note"><strong>Public & Free</strong><span>No account, advertising, analytics, or tracking added here.</span></div></div></div></section>
-<section class="quick-start"><div class="quick-grid"><a class="quick-link" href="https://www.va.gov/resources/" target="_blank" rel="noopener noreferrer"><strong>VA Resources</strong><span>Benefits and services by topic</span></a><a class="quick-link" href="https://www.va.gov/housingresources/" target="_blank" rel="noopener noreferrer"><strong>Housing Help</strong><span>Homeless or at risk</span></a><a class="quick-link" href="https://www.va.gov/health-care/" target="_blank" rel="noopener noreferrer"><strong>Health Care</strong><span>Eligibility, enrollment, and care</span></a><a class="quick-link" href="https://www.va.gov/careers-employment/" target="_blank" rel="noopener noreferrer"><strong>Careers</strong><span>Employment, training, and business</span></a></div></section>
-<section class="section alt" id="nearby">
-  <div class="section-inner">
-    <div class="section-heading">
-      <p class="kicker">Veteran help around you</p>
-      <h2>Use location only when you choose.</h2>
-      <p class="section-intro">Find nearby VA facilities, Vet Centers, Veterans Service Officers, job centers, housing support, food, clothing, legal help, business counseling, and community services. Call or verify before traveling because hours and eligibility can change.</p>
-    </div>
-    <div class="location-shell">
-      <article class="location-panel">
-        <div class="location-badge">⌖</div>
-        <h3>Your search area</h3>
-        <p>Use browser location for this tab, or enter a city, state, or ZIP. Nothing is requested on page load.</p>
-        <div class="location-actions">
-          <button class="btn btn-primary" id="useLocation" type="button">Use My Location</button>
-          <button class="btn btn-secondary" id="clearLocation" type="button">Clear Location</button>
-        </div>
-        <label class="location-label" for="manualLocation">Or type an area</label>
-        <div class="location-entry">
-          <input class="field" id="manualLocation" maxlength="80" placeholder="City, state, or ZIP" autocomplete="postal-code">
-          <button class="tool-button" id="useManualLocation" type="button">Use Area</button>
-        </div>
-        <div class="location-status" id="locationStatus" role="status" aria-live="polite">No location selected. National veteran locators still work without sharing a location here.</div>
-        <div class="location-privacy"><strong>Privacy:</strong> precise browser coordinates stay only in JavaScript memory for the open tab. They are not placed in localStorage, not sent to Verve N Veda, and not included in another tool unless you choose to share them yourself.</div>
-      </article>
-      <article class="local-results">
-        <h3>Veteran doorways near me</h3>
-        <p>Each card pairs a map-style nearby search with a national or official pathway.</p>
-        <div class="local-grid" id="localGrid"></div>
-      </article>
-    </div>
-  </div>
-</section>
-<section class="section" id="service-wings"><div class="section-inner"><div class="section-heading"><p class="kicker">One unified service center</p><h2>Enter the wing that best matches today’s need.</h2><p class="section-intro">You do not need to understand every program name before beginning. Each wing starts with official pathways and connects related Verve N Veda halls where they can provide additional practical support.</p></div><div class="wing-grid"><article class="wing-card" style="--accent:#294b40"><span class="wing-mark">B</span><h3>Benefits Wing</h3><p>Disability, pension, claims, appeals, records, education benefits, insurance, and survivor support.</p><div class="wing-links"><a href="https://www.va.gov/disability/" target="_blank" rel="noopener noreferrer"><span>Disability compensation</span><span>↗</span></a><a href="https://www.va.gov/pension/" target="_blank" rel="noopener noreferrer"><span>Veterans pension</span><span>↗</span></a><a href="https://www.va.gov/decision-reviews/" target="_blank" rel="noopener noreferrer"><span>Decision reviews and appeals</span><span>↗</span></a><a href="https://www.va.gov/records/" target="_blank" rel="noopener noreferrer"><span>Military and VA records</span><span>↗</span></a></div></article><article class="wing-card" style="--accent:#426c72"><span class="wing-mark">H</span><h3>Health & Wellness Wing</h3><p>VA health enrollment, mental health, PTSD, caregivers, pharmacy, rehabilitation, and supportive wellness.</p><div class="wing-links"><a href="https://www.va.gov/health-care/" target="_blank" rel="noopener noreferrer"><span>VA health care</span><span>↗</span></a><a href="https://www.mentalhealth.va.gov/" target="_blank" rel="noopener noreferrer"><span>VA mental health</span><span>↗</span></a><a href="https://www.ptsd.va.gov/" target="_blank" rel="noopener noreferrer"><span>National Center for PTSD</span><span>↗</span></a><a href="https://vervenveda.com/medicament-hub.github.io/" target="_blank" rel="noopener noreferrer"><span>Medicament Hub</span><span>↗</span></a></div></article><article class="wing-card" style="--accent:#8a6346"><span class="wing-mark">⌂</span><h3>Housing Wing</h3><p>Emergency shelter, eviction prevention, transitional and permanent housing, home loans, and adaptive housing.</p><div class="wing-links"><a href="https://www.va.gov/housingresources/" target="_blank" rel="noopener noreferrer"><span>Homeless and housing help</span><span>↗</span></a><a href="https://www.va.gov/housing-assistance/" target="_blank" rel="noopener noreferrer"><span>VA housing assistance</span><span>↗</span></a><a href="https://vervenveda.com/homeless.github.io/" target="_blank" rel="noopener noreferrer"><span>One Door Homeless Services</span><span>↗</span></a><a href="tel:18774243838"><span>Homeless Veterans hotline</span><span>Call</span></a></div></article><article class="wing-card" style="--accent:#4f6476"><span class="wing-mark">W</span><h3>Career & Business Wing</h3><p>Employment, vocational rehabilitation, civilian career translation, entrepreneurship, and small business.</p><div class="wing-links"><a href="https://www.va.gov/careers-employment/" target="_blank" rel="noopener noreferrer"><span>VA careers and employment</span><span>↗</span></a><a href="https://www.va.gov/careers-employment/vocational-rehabilitation/" target="_blank" rel="noopener noreferrer"><span>Veteran Readiness & Employment</span><span>↗</span></a><a href="https://vervenveda.com/Khaemenes_Academy.github.io/higher_learming/apps/Career_star_index.html" target="_blank" rel="noopener noreferrer"><span>Khaemenes Career Star</span><span>↗</span></a><a href="https://www.sba.gov/business-guide/grow-your-business/veteran-owned-businesses" target="_blank" rel="noopener noreferrer"><span>Veteran-owned businesses</span><span>↗</span></a><a href="https://vervenveda.com/finance.github.io/" target="_blank" rel="noopener noreferrer"><span>Finance Hall</span><span>↗</span></a></div></article><article class="wing-card" style="--accent:#6a5c73"><span class="wing-mark">F</span><h3>Family & Caregiver Wing</h3><p>Caregivers, spouses, children, survivors, Gold Star families, burials, memorials, and family benefits.</p><div class="wing-links"><a href="https://www.va.gov/family-and-caregiver-benefits/" target="_blank" rel="noopener noreferrer"><span>Family and caregiver benefits</span><span>↗</span></a><a href="https://www.caregiver.va.gov/" target="_blank" rel="noopener noreferrer"><span>VA Caregiver Support</span><span>↗</span></a><a href="https://www.va.gov/burials-memorials/" target="_blank" rel="noopener noreferrer"><span>Burials and memorials</span><span>↗</span></a><a href="https://www.va.gov/survivors/" target="_blank" rel="noopener noreferrer"><span>Survivor benefits</span><span>↗</span></a></div></article><article class="wing-card" style="--accent:#6a4a42"><span class="wing-mark">§</span><h3>Legal & Advocacy Wing</h3><p>Accredited claims assistance, appeals, military records, consumer protection, disability rights, and legal education.</p><div class="wing-links"><a href="https://www.va.gov/get-help-from-accredited-representative/" target="_blank" rel="noopener noreferrer"><span>Find an accredited representative</span><span>↗</span></a><a href="https://www.va.gov/decision-reviews/" target="_blank" rel="noopener noreferrer"><span>VA decision reviews</span><span>↗</span></a><a href="https://vervenveda.com/firmament.github.io/" target="_blank" rel="noopener noreferrer"><span>Firmament Law</span><span>↗</span></a><a href="https://www.usa.gov/legal-aid" target="_blank" rel="noopener noreferrer"><span>Public legal-aid directory</span><span>↗</span></a></div></article><article class="wing-card" style="--accent:#7b6a36"><span class="wing-mark">E</span><h3>Education Wing</h3><p>GI Bill benefits, college, skilled trades, certifications, career counseling, GED study, and lifelong learning.</p><div class="wing-links"><a href="https://www.va.gov/education/" target="_blank" rel="noopener noreferrer"><span>VA education benefits</span><span>↗</span></a><a href="https://www.va.gov/careers-employment/education-and-career-counseling/" target="_blank" rel="noopener noreferrer"><span>Education and career counseling</span><span>↗</span></a><a href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/" target="_blank" rel="noopener noreferrer"><span>Khaemenes Higher Learning</span><span>↗</span></a><a href="https://www.va.gov/education/gi-bill-comparison-tool/" target="_blank" rel="noopener noreferrer"><span>GI Bill Comparison Tool</span><span>↗</span></a></div></article><article class="wing-card" style="--accent:#486a57"><span class="wing-mark">C</span><h3>Community Wing</h3><p>Veteran organizations, state offices, mentoring, volunteering, civic participation, outreach events, and peer connection.</p><div class="wing-links"><a href="https://www.va.gov/resources/state-veterans-affairs-offices/" target="_blank" rel="noopener noreferrer"><span>State Veterans Affairs offices</span><span>↗</span></a><a href="https://www.va.gov/outreach-and-events/events/" target="_blank" rel="noopener noreferrer"><span>VA outreach events</span><span>↗</span></a><a href="https://vervenveda.com/onenationforall.github.io/" target="_blank" rel="noopener noreferrer"><span>One Nation For All</span><span>↗</span></a><a href="https://www.nrd.gov/" target="_blank" rel="noopener noreferrer"><span>National Resource Directory</span><span>↗</span></a></div></article><article class="wing-card" style="--accent:#4f6670"><span class="wing-mark">R</span><h3>Recreation & Renewal Wing</h3><p>Adaptive sports, nature, art, music, strategy games, writing, reflection, conservation, and restorative practices.</p><div class="wing-links"><a href="https://department.va.gov/veteran-sports/" target="_blank" rel="noopener noreferrer"><span>VA adaptive sports</span><span>↗</span></a><a href="https://vervenveda.com/aurora.github.io/" target="_blank" rel="noopener noreferrer"><span>Aurora Sanctuary</span><span>↗</span></a><a href="https://vervenveda.com/arcade.github.io/" target="_blank" rel="noopener noreferrer"><span>Arcade</span><span>↗</span></a><a href="https://vervenveda.com/bazaarart.github.io/" target="_blank" rel="noopener noreferrer"><span>Bazaar Art</span><span>↗</span></a></div></article></div></div></section>
-<section class="section" id="career-education">
-  <div class="section-inner">
-    <div class="section-heading">
-      <p class="kicker">Career · education · business</p>
-      <h2>Turn military experience into the next mission.</h2>
-      <p class="section-intro">Start with direction, translate experience into civilian possibilities, compare benefits and schools, then choose employment, training, higher education, apprenticeship, or entrepreneurship.</p>
-    </div>
-    <div class="launch-grid">
-      <article class="launch-card">
-        <div class="launch-step">01</div>
-        <h3>Discover Direction</h3>
-        <p>Use a broad career assessment first, then compare your military experience with civilian occupations.</p>
-        <div class="launch-links">
-          <a class="primary-path" href="https://vervenveda.com/Khaemenes_Academy.github.io/higher_learming/apps/Career_star_index.html" target="_blank" rel="noopener noreferrer">Khaemenes Career Star ↗</a>
-          <a href="https://www.mynextmove.org/vets/" target="_blank" rel="noopener noreferrer">My Next Move for Veterans ↗</a>
-        </div>
-      </article>
-      <article class="launch-card">
-        <div class="launch-step">02</div>
-        <h3>Work & Retrain</h3>
-        <p>Use VA and Department of Labor pathways for rehabilitation, employment planning, retraining, job search, and local workforce support.</p>
-        <div class="launch-links">
-          <a class="primary-path" href="https://www.va.gov/careers-employment/vocational-rehabilitation/" target="_blank" rel="noopener noreferrer">Veteran Readiness & Employment ↗</a>
-          <a href="https://www.careeronestop.org/LocalHelp/AmericanJobCenters/american-job-centers.aspx" target="_blank" rel="noopener noreferrer">American Job Centers ↗</a>
-        </div>
-      </article>
-      <article class="launch-card">
-        <div class="launch-step">03</div>
-        <h3>Higher Education</h3>
-        <p>Compare GI Bill-approved programs, explore Khaemenes Higher Learning, and organize funding questions before committing to a school or program.</p>
-        <div class="launch-links">
-          <a class="primary-path" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/" target="_blank" rel="noopener noreferrer">Khaemenes Higher Learning ↗</a>
-          <a href="https://www.va.gov/education/gi-bill-comparison-tool/schools-and-employers/" target="_blank" rel="noopener noreferrer">GI Bill Comparison Tool ↗</a>
-          <a href="https://vervenveda.com/Khaemenes_Academy.github.io/higher_learming/apps/Financial_aid_index.html" target="_blank" rel="noopener noreferrer">Khaemenes Financial Aid Tool ↗</a>
-        </div>
-      </article>
-      <article class="launch-card">
-        <div class="launch-step">04</div>
-        <h3>Build a Business</h3>
-        <p>Explore entrepreneurship with veteran-specific counseling, training, business-development support, and federal contracting pathways.</p>
-        <div class="launch-links">
-          <a class="primary-path" href="https://www.sba.gov/local-assistance/resource-partners/veterans-business-outreach-center-vboc-program" target="_blank" rel="noopener noreferrer">Veterans Business Outreach Centers ↗</a>
-          <a href="https://www.sba.gov/sba-learning-platform/boots-business" target="_blank" rel="noopener noreferrer">Boots to Business ↗</a>
-          <a href="https://veterans.certify.sba.gov/" target="_blank" rel="noopener noreferrer">VetCert ↗</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-<section class="section alt" id="directory"><div class="section-inner"><div class="section-heading"><p class="kicker">Searchable public directory</p><h2>Find a direct official pathway.</h2><p class="section-intro">Search by need or choose a category. Official resources open in a new tab so this Veterans Hub remains available as your home base.</p></div><div class="directory-shell"><div class="directory-tools"><input class="field" id="resourceSearch" type="search" placeholder="Search benefits, PTSD, housing, records, jobs, school, business, women veterans…" autocomplete="off"><select class="field" id="resourceCategory" aria-label="Filter resources"></select><button class="tool-button" id="clearFilters" type="button">Clear Search</button></div><p class="result-note" id="resultNote" aria-live="polite"></p><div class="resource-grid" id="resourceGrid"></div><div class="empty" id="emptyState"><strong>No resource matched that search.</strong><p>Try a broader word or return to the Service Wings.</p></div></div></div></section>
-<section class="section alt" id="civic">
-  <div class="section-inner">
-    <div class="section-heading">
-      <p class="kicker">Civic life after service</p>
-      <h2>Service can continue without becoming partisan.</h2>
-      <p class="section-intro">The civic wing is designed for constitutional learning, local participation, volunteering, public problem-solving, informed voting, mentoring, and community leadership.</p>
-    </div>
-    <div class="civic-grid">
-      <article class="civic-card feature">
-        <h3>One Nation For All</h3>
-        <p>A direct bridge from the Veterans Hub into the Verve N Veda civic repository—built for public learning, civic participation, policy literacy, constitutional understanding, and community connection.</p>
-        <div class="civic-points">
-          <div class="civic-point">Civic education</div>
-          <div class="civic-point">Constitutional literacy</div>
-          <div class="civic-point">Community service</div>
-          <div class="civic-point">Public participation</div>
-        </div>
-        <div class="civic-links">
-          <a href="https://vervenveda.com/onenationforall.github.io/" target="_blank" rel="noopener noreferrer">Enter One Nation For All ↗</a>
-        </div>
-      </article>
-      <article class="civic-card">
-        <h3>Keep Serving</h3>
-        <p>Use official nonpartisan gateways for volunteering and voter information, or bring experience back into mentoring, schools, conservation, neighborhood projects, and veterans service.</p>
-        <div class="civic-links">
-          <a href="https://www.volunteer.va.gov/volunteer/" target="_blank" rel="noopener noreferrer">Volunteer with VA ↗</a>
-          <a href="https://vote.gov/" target="_blank" rel="noopener noreferrer">Vote.gov ↗</a>
-          <a href="#mission">Mission Continues ↓</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-<section class="section dark" id="mission"><div class="section-inner"><div class="section-heading"><p class="kicker">Service continues in new forms</p><h2>The Mission Continues.</h2><p class="section-intro">Military experience can continue strengthening families, schools, businesses, neighborhoods, conservation projects, creative communities, and public life.</p></div><div class="mission-grid"><article class="mission-card"><span>01</span><h3>Lead</h3><p>Bring calm judgment and experience into civic and community leadership.</p></article><article class="mission-card"><span>02</span><h3>Mentor</h3><p>Help transitioning service members and neighbors build confidence and direction.</p></article><article class="mission-card"><span>03</span><h3>Teach</h3><p>Share practical skills, history, discipline, craft, and lived knowledge.</p></article><article class="mission-card"><span>04</span><h3>Create</h3><p>Explore art, music, writing, design, photography, and storytelling.</p></article><article class="mission-card"><span>05</span><h3>Build</h3><p>Start a business, join a trade, restore a home, or strengthen an institution.</p></article><article class="mission-card"><span>06</span><h3>Serve</h3><p>Join conservation, disaster response, and neighborhood improvement.</p></article></div></div></section>
-<section class="section" id="stability-bridge">
-  <div class="section-inner">
-    <div class="section-heading">
-      <p class="kicker">When the problem is bigger than one benefit</p>
-      <h2>Cross into the wider stability network.</h2>
-      <p class="section-intro">Veteran-specific programs come first, but housing loss, food insecurity, legal problems, health concerns, job loss, and family strain can require several systems at once.</p>
-    </div>
-    <div class="bridge-grid">
-      <article class="bridge-card">
-        <div class="bridge-mark">1D</div>
-        <h3>One Door Homeless Services</h3>
-        <p>Use the broader geolocated One Door hub for food, shelter, clothing, job centers, documents, benefits, Community Action, legal help, and local service searches.</p>
-        <div class="launch-links">
-          <a class="primary-path" href="https://vervenveda.com/homeless.github.io/" target="_blank" rel="noopener noreferrer">Open One Door ↗</a>
-          <a href="tel:18774243838">Call 877-424-3838</a>
-        </div>
-      </article>
-      <article class="bridge-card">
-        <div class="bridge-mark">H</div>
-        <h3>Housing Stability</h3>
-        <p>VA homelessness programs include prevention, rapid re-housing, supportive housing, outreach, health care, employment connections, and case management pathways.</p>
-        <div class="launch-links">
-          <a class="primary-path" href="https://www.va.gov/housingresources/" target="_blank" rel="noopener noreferrer">VA Homeless Help ↗</a>
-          <a href="https://department.va.gov/homeless/supportive-services-for-veteran-families/" target="_blank" rel="noopener noreferrer">SSVF ↗</a>
-          <a href="https://department.va.gov/homeless/hud-vash/" target="_blank" rel="noopener noreferrer">HUD-VASH ↗</a>
-        </div>
-      </article>
-      <article class="bridge-card">
-        <div class="bridge-mark">N</div>
-        <h3>NAIB Resource Planning</h3>
-        <p>For a complicated situation involving several systems, open NAIB to organize questions, priorities, research, applications, appointments, and a next-step plan.</p>
-        <div class="launch-links">
-          <a class="primary-path" href="https://artist1970.github.io/noema-ai.github.io/#naib-workspace" target="_blank" rel="noopener noreferrer">Open NAIB ↗</a>
-          <a href="https://vervenveda.com/PLERASearch.github.io/" target="_blank" rel="noopener noreferrer">PLERA Search ↗</a>
-        </div>
-      </article>
-    </div>
-    <p class="research-note">Veteran program rules, local capacity, benefit eligibility, school approval, job openings, grant status, and office hours can change. Use this hub to reach the authoritative source, then verify before making a financial, legal, medical, housing, or education decision.</p>
-  </div>
-</section>
-<section class="section" id="network"><div class="section-inner"><div class="section-heading"><p class="kicker">Connected Verve N Veda support</p><h2>Helpful public halls across the network.</h2><p class="section-intro">These links use published HTTPS GitHub Pages destinations only. They do not open repository source pages.</p></div><div class="network-grid" id="networkGrid"></div><div class="notice"><strong>Public-service notice:</strong> This hub organizes links and educational information. It is not the U.S. Department of Veterans Affairs and does not replace emergency services, professional medical care, licensed legal advice, accredited claims assistance, or official eligibility decisions. For immediate danger, call 911. For confidential Veterans crisis support, call 988 and press 1 or text 838255.</div></div></section>
-</main>
-<footer class="site-footer"><div class="footer-inner"><div><p class="footer-title">Veterans Resource Hub</p><p class="footer-copy">One Door · No Wrong Door · A Verve N Veda public-service hall · © <span id="year"></span> Jennifer Kay Pearl. All Rights Reserved.</p></div><nav class="footer-links"><a href="#top">Top</a><a href="#nearby">Near Me</a><a href="#career-education">Career & Education</a><a href="#civic">Civic Life</a><a href="#directory">Directory</a><a href="#mission">Mission Continues</a><a href="https://www.veteranscrisisline.net/" target="_blank" rel="noopener noreferrer">Crisis Support</a></nav></div></footer>
-<div class="drawer-overlay" id="drawer" aria-hidden="true"><aside class="drawer"><div class="drawer-header"><h2 class="drawer-title">Veterans Directory</h2><button class="close-button" id="closeDrawer" type="button" aria-label="Close directory">×</button></div><p class="drawer-intro">Begin with network anchors, then choose an official resource or connected public hall.</p><input class="drawer-search" id="drawerSearch" type="search" placeholder="Search the complete directory…" autocomplete="off"><nav class="drawer-nav" id="drawerNav"></nav></aside></div>
-<script>
-"use strict";
-const RESOURCES=[
-  {
-    "title": "VA Resources & Support",
-    "category": "General",
-    "url": "https://www.va.gov/resources/",
-    "icon": "VA",
-    "description": "Browse official benefits and services by topic, including disability, education, health, housing, pension, family, caregivers, memorials, and appeals.",
-    "tags": "benefits support forms contact"
-  },
-  {
-    "title": "Disability Compensation",
-    "category": "Benefits",
-    "url": "https://www.va.gov/disability/",
-    "icon": "DC",
-    "description": "Service-connected disability compensation, eligibility, claims, evidence, and related benefits.",
-    "tags": "disability claim compensation"
-  },
-  {
-    "title": "Veterans Pension",
-    "category": "Benefits",
-    "url": "https://www.va.gov/pension/",
-    "icon": "VP",
-    "description": "Needs-based pension information for eligible wartime Veterans and survivors.",
-    "tags": "pension income aid attendance"
-  },
-  {
-    "title": "Decision Reviews & Appeals",
-    "category": "Benefits",
-    "url": "https://www.va.gov/decision-reviews/",
-    "icon": "DR",
-    "description": "Supplemental claims, higher-level review, and Board appeal pathways.",
-    "tags": "appeal review claim decision"
-  },
-  {
-    "title": "Military & VA Records",
-    "category": "Records",
-    "url": "https://www.va.gov/records/",
-    "icon": "R",
-    "description": "Request military records, discharge papers, VA records, and identification information.",
-    "tags": "dd214 discharge records"
-  },
-  {
-    "title": "VA Health Care",
-    "category": "Health",
-    "url": "https://www.va.gov/health-care/",
-    "icon": "H",
-    "description": "Check eligibility, apply for health care, find services, and manage VA health needs.",
-    "tags": "health medical clinic pharmacy"
-  },
-  {
-    "title": "VA Mental Health",
-    "category": "Mental Health",
-    "url": "https://www.mentalhealth.va.gov/",
-    "icon": "MH",
-    "description": "Treatment pathways, recovery resources, and support for Veterans and families.",
-    "tags": "mental health depression anxiety"
-  },
-  {
-    "title": "National Center for PTSD",
-    "category": "Mental Health",
-    "url": "https://www.ptsd.va.gov/",
-    "icon": "P",
-    "description": "Evidence-based PTSD education, treatment information, and self-help tools.",
-    "tags": "ptsd trauma treatment"
-  },
-  {
-    "title": "Caregiver Support",
-    "category": "Family",
-    "url": "https://www.caregiver.va.gov/",
-    "icon": "C",
-    "description": "Programs, training, respite information, and resources for family caregivers.",
-    "tags": "caregiver respite family"
-  },
-  {
-    "title": "Family & Caregiver Benefits",
-    "category": "Family",
-    "url": "https://www.va.gov/family-and-caregiver-benefits/",
-    "icon": "F",
-    "description": "Benefits and services for spouses, dependents, survivors, and caregivers.",
-    "tags": "spouse survivor caregiver"
-  },
-  {
-    "title": "Survivor Benefits",
-    "category": "Family",
-    "url": "https://www.va.gov/survivors/",
-    "icon": "S",
-    "description": "Information for surviving spouses, children, parents, and other eligible family members.",
-    "tags": "survivor dic spouse child"
-  },
-  {
-    "title": "Housing Assistance",
-    "category": "Housing",
-    "url": "https://www.va.gov/housing-assistance/",
-    "icon": "HA",
-    "description": "VA-backed home loans, refinancing, housing grants, foreclosure avoidance, and housing support.",
-    "tags": "home loan mortgage housing"
-  },
-  {
-    "title": "Homeless & At-Risk Housing Help",
-    "category": "Housing",
-    "url": "https://www.va.gov/housingresources/",
-    "icon": "HH",
-    "description": "Emergency shelter, eviction prevention, case management, employment help, and long-term housing pathways.",
-    "tags": "homeless shelter eviction hotline"
-  },
-  {
-    "title": "Careers & Employment",
-    "category": "Employment",
-    "url": "https://www.va.gov/careers-employment/",
-    "icon": "CE",
-    "description": "Career planning, vocational rehabilitation, employment, education counseling, and business support.",
-    "tags": "job career resume business"
-  },
-  {
-    "title": "Veteran Readiness & Employment",
-    "category": "Employment",
-    "url": "https://www.va.gov/careers-employment/vocational-rehabilitation/",
-    "icon": "VR",
-    "description": "Chapter 31 employment and training support for eligible Veterans and service members.",
-    "tags": "vre chapter 31 vocational"
-  },
-  {
-    "title": "Education Benefits",
-    "category": "Education",
-    "url": "https://www.va.gov/education/",
-    "icon": "ED",
-    "description": "GI Bill, training, certifications, apprenticeships, school payments, and benefit management.",
-    "tags": "education gi bill college trade"
-  },
-  {
-    "title": "GI Bill Comparison Tool",
-    "category": "Education",
-    "url": "https://www.va.gov/education/gi-bill-comparison-tool/",
-    "icon": "GI",
-    "description": "Compare approved schools and programs using official VA information.",
-    "tags": "school compare program"
-  },
-  {
-    "title": "Accredited Representative",
-    "category": "Legal & Claims",
-    "url": "https://www.va.gov/get-help-from-accredited-representative/",
-    "icon": "AR",
-    "description": "Find a VA-accredited VSO representative, attorney, or claims agent.",
-    "tags": "vso attorney claims agent"
-  },
-  {
-    "title": "State Veterans Affairs Offices",
-    "category": "Community",
-    "url": "https://www.va.gov/resources/state-veterans-affairs-offices/",
-    "icon": "ST",
-    "description": "Locate state-level Veterans offices and benefits assistance.",
-    "tags": "state local office"
-  },
-  {
-    "title": "VA Locations",
-    "category": "General",
-    "url": "https://www.va.gov/find-locations/",
-    "icon": "LOC",
-    "description": "Find medical centers, clinics, regional offices, Vet Centers, pharmacies, and cemeteries.",
-    "tags": "location clinic hospital"
-  },
-  {
-    "title": "National Resource Directory",
-    "category": "Community",
-    "url": "https://www.nrd.gov/",
-    "icon": "NRD",
-    "description": "A national directory for service members, Veterans, families, and caregivers.",
-    "tags": "directory community services"
-  },
-  {
-    "title": "Burials & Memorials",
-    "category": "Family",
-    "url": "https://www.va.gov/burials-memorials/",
-    "icon": "BM",
-    "description": "Burial eligibility, cemetery services, memorial items, and survivor planning.",
-    "tags": "burial cemetery memorial"
-  },
-  {
-    "title": "VA Adaptive Sports",
-    "category": "Recreation",
-    "url": "https://department.va.gov/veteran-sports/",
-    "icon": "AS",
-    "description": "Adaptive sports, therapeutic arts, special events, and opportunities for Veterans with disabilities.",
-    "tags": "sports recreation adaptive"
-  },
-  {
-    "title": "National Call Center for Homeless Veterans",
-    "category": "Housing",
-    "url": "https://www.va.gov/homeless/nationalcallcenter.asp",
-    "icon": "4AID",
-    "description": "24/7 VA connection point for Veterans who are homeless or at imminent risk of homelessness. The call center connects Veterans to nearby VA homeless-program staff and services.",
-    "tags": "homeless housing risk shelter 877 424 3838 4aid vet"
-  },
-  {
-    "title": "HUD-VASH Supportive Housing",
-    "category": "Housing",
-    "url": "https://department.va.gov/homeless/hud-vash/",
-    "icon": "HV",
-    "description": "HUD-VASH combines HUD rental assistance with VA case management and supportive services for eligible Veterans experiencing homelessness.",
-    "tags": "hud vash voucher permanent housing case management"
-  },
-  {
-    "title": "Supportive Services for Veteran Families",
-    "category": "Housing",
-    "url": "https://department.va.gov/homeless/supportive-services-for-veteran-families/",
-    "icon": "SSVF",
-    "description": "SSVF supports eligible low-income Veteran families who are homeless or at imminent risk through rapid re-housing, homelessness prevention, case management, and connections to benefits and services.",
-    "tags": "ssvf rent utilities prevention rapid rehousing family"
-  },
-  {
-    "title": "Veterans Justice Programs",
-    "category": "Legal & Claims",
-    "url": "https://department.va.gov/homeless/veterans-justice-programs/",
-    "icon": "VJP",
-    "description": "VA pathways for justice-involved Veterans, including Veterans Justice Outreach, re-entry support, treatment and housing connections, and legal-services referrals.",
-    "tags": "justice jail court reentry legal veteran treatment court"
-  },
-  {
-    "title": "VA Legal Help for Veterans",
-    "category": "Legal & Claims",
-    "url": "https://www.va.gov/ogc/legalservices.asp",
-    "icon": "LAW",
-    "description": "VA Office of General Counsel directory of legal-help pathways, including pro-bono clinics and Veterans Justice Outreach referrals. VA itself does not provide legal representation through this page.",
-    "tags": "legal aid pro bono clinic attorney justice"
-  },
-  {
-    "title": "Center for Women Veterans",
-    "category": "Specialized Support",
-    "url": "https://department.va.gov/center-for-women-veterans/",
-    "icon": "WV",
-    "description": "VA resource and advocacy center focused on access to benefits, services, opportunities, outreach, and support for women Veterans.",
-    "tags": "women veteran health benefits coordinator transition"
-  },
-  {
-    "title": "My Next Move for Veterans",
-    "category": "Employment",
-    "url": "https://www.mynextmove.org/vets/",
-    "icon": "NMV",
-    "description": "Explore civilian careers by military experience, industry, interests, skills, salary, outlook, training, apprenticeships, and current job openings.",
-    "tags": "career assessment military transition mos afsc rating job interests"
-  },
-  {
-    "title": "American Job Center Finder",
-    "category": "Employment",
-    "url": "https://www.careeronestop.org/LocalHelp/AmericanJobCenters/american-job-centers.aspx",
-    "icon": "AJC",
-    "description": "Find local public workforce centers for job search help, workshops, training information, computers, career counseling, and employment services.",
-    "tags": "job center workforce resume training local employment"
-  },
-  {
-    "title": "Veterans Business Outreach Centers",
-    "category": "Business",
-    "url": "https://www.sba.gov/local-assistance/resource-partners/veterans-business-outreach-center-vboc-program",
-    "icon": "VBOC",
-    "description": "SBA VBOCs provide entrepreneurship workshops, training, counseling, mentorship, and referrals for Veterans, service members, Guard/Reserve members, military spouses, and families.",
-    "tags": "small business startup counseling entrepreneur veteran spouse"
-  },
-  {
-    "title": "SBA Boots to Business",
-    "category": "Business",
-    "url": "https://www.sba.gov/sba-learning-platform/boots-business",
-    "icon": "B2B",
-    "description": "Entrepreneurship education connected to the military transition ecosystem, with foundational business-ownership training and follow-on learning.",
-    "tags": "boots business entrepreneurship transition military spouse"
-  },
-  {
-    "title": "SBA Veteran Small Business Certification",
-    "category": "Business",
-    "url": "https://veterans.certify.sba.gov/",
-    "icon": "VC",
-    "description": "Official SBA VetCert pathway for qualifying veteran-owned and service-disabled veteran-owned small businesses pursuing federal contracting opportunities.",
-    "tags": "vetcert vosb sdvosb contracting federal business"
-  },
-  {
-    "title": "VA Center for Development & Civic Engagement",
-    "category": "Community",
-    "url": "https://www.volunteer.va.gov/volunteer/",
-    "icon": "CDCE",
-    "description": "Find opportunities to volunteer with VA facilities and programs, including local service, special events, transportation, and community engagement.",
-    "tags": "volunteer civic engagement community service va"
-  }
-];
-const NETWORK=[
-  {
-    "title": "Verve N Veda",
-    "url": "https://vervenveda.com/",
-    "mark": "V",
-    "description": "The public gateway to the complete learning, service, creative, and civic network."
-  },
-  {
-    "title": "One Nation For All",
-    "url": "https://vervenveda.com/onenationforall.github.io/",
-    "mark": "1",
-    "description": "Civic participation, public policy, constitutional learning, and community connection."
-  },
-  {
-    "title": "PLERA Search",
-    "url": "https://vervenveda.com/PLERASearch.github.io/",
-    "mark": "⌕",
-    "description": "A broad doorway into trusted public information, learning, and research."
-  },
-  {
-    "title": "Firmament Law",
-    "url": "https://vervenveda.com/firmament.github.io/",
-    "mark": "§",
-    "description": "Legal information, rights, courts, claims research, and public-resource pathways."
-  },
-  {
-    "title": "Finance Hall",
-    "url": "https://vervenveda.com/finance.github.io/",
-    "mark": "$",
-    "description": "Budgeting, credit, taxes, retirement, benefits, business, and financial literacy."
-  },
-  {
-    "title": "Homeless Services",
-    "url": "https://vervenveda.com/homeless.github.io/",
-    "mark": "1D",
-    "description": "One Door pathways for shelter, housing, food, documents, benefits, and coordinated help."
-  },
-  {
-    "title": "Medicament Hub",
-    "url": "https://vervenveda.com/medicament-hub.github.io/",
-    "mark": "+",
-    "description": "Health education, prevention, family resources, wellness tools, and care pathways."
-  },
-  {
-    "title": "Aurora Sanctuary",
-    "url": "https://vervenveda.com/aurora.github.io/",
-    "mark": "AU",
-    "description": "Rest, breathing, reflection, journaling, creativity, and supportive wellbeing tools."
-  },
-  {
-    "title": "Khaemenes Academy",
-    "url": "https://vervenveda.com/Khaemenes_Academy.github.io/",
-    "mark": "KA",
-    "description": "Career assessment, GED, financial-aid tools, lifelong learning, family learning, and academy pathways."
-  },
-  {
-    "title": "River to Road",
-    "url": "https://vervenveda.com/river_to_road.github.io/",
-    "mark": "≈",
-    "description": "Environmental stewardship, cleanup, conservation, and community service."
-  },
-  {
-    "title": "Arcade",
-    "url": "https://vervenveda.com/arcade.github.io/",
-    "mark": "◆",
-    "description": "Strategy, puzzles, creativity, trivia, learning, and restorative play."
-  },
-  {
-    "title": "Bazaar Art",
-    "url": "https://vervenveda.com/bazaarart.github.io/",
-    "mark": "✦",
-    "description": "Art, creative expression, galleries, workshops, writing, and community culture."
-  },
-  {
-    "title": "The Refrain",
-    "url": "https://vervenveda.com/the_refrain.github.io/",
-    "mark": "♪",
-    "description": "Music education, instruments, composition, sound, and creative renewal."
-  },
-  {
-    "title": "The Verifier",
-    "url": "https://vervenveda.com/theverifier.github.io/",
-    "mark": "✓",
-    "description": "News discovery, source comparison, research, and information literacy."
-  },
-  {
-    "title": "Khaemenes Higher Learning",
-    "url": "https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",
-    "mark": "HL",
-    "description": "University-level study, advanced mathematics, research, professional learning, and continuing education."
-  },
-  {
-    "title": "NAIB",
-    "url": "https://artist1970.github.io/noema-ai.github.io/#naib-workspace",
-    "mark": "N",
-    "description": "Public intelligence workspace for planning, research, resource navigation, mentors, and step-by-step problem solving."
-  }
-];
+<body id="top">
+<a class="skip-link" href="#main">Skip to main content</a>
 
-const LOCAL_LANES=[
-  {title:"VA Facilities",tag:"VA",query:"VA medical center clinic veteran affairs",official:"https://www.va.gov/find-locations/",label:"VA Location Finder"},
-  {title:"Vet Centers",tag:"Counseling",query:"Vet Center veterans counseling",official:"https://www.va.gov/find-locations/",label:"VA Location Finder"},
-  {title:"Veterans Service Officers",tag:"Claims",query:"Veterans Service Officer VSO accredited representative",official:"https://www.va.gov/get-help-from-accredited-representative/",label:"Accredited Representative"},
-  {title:"Homeless Veteran Help",tag:"Housing",query:"VA homeless veteran services SSVF",official:"https://www.va.gov/housingresources/",label:"VA Housing Help"},
-  {title:"American Job Centers",tag:"Employment",query:"American Job Center workforce center",official:"https://www.careeronestop.org/LocalHelp/AmericanJobCenters/american-job-centers.aspx",label:"Job Center Finder"},
-  {title:"Food & Basic Needs",tag:"Stability",query:"veterans food pantry community action",official:"https://vervenveda.com/homeless.github.io/",label:"One Door"},
-  {title:"Clothing & Thrift",tag:"Stability",query:"veterans clothing assistance thrift store",official:"https://vervenveda.com/homeless.github.io/",label:"One Door"},
-  {title:"Veteran Legal Help",tag:"Legal",query:"veteran legal aid pro bono clinic",official:"https://www.va.gov/ogc/legalservices.asp",label:"VA Legal Help"},
-  {title:"Veteran Business Support",tag:"Business",query:"Veterans Business Outreach Center",official:"https://www.sba.gov/local-assistance/resource-partners/veterans-business-outreach-center-vboc-program",label:"SBA VBOC"}
-];
-let localArea={mode:"none",label:"",lat:null,lng:null};
-function cleanArea(v){return String(v||"").replace(/[<>{}\[\]]/g,"").trim().slice(0,80)}
-function areaQuery(){
-  if(localArea.mode==="coords")return `${localArea.lat.toFixed(5)},${localArea.lng.toFixed(5)}`;
-  if(localArea.mode==="manual")return localArea.label;
-  return "";
-}
-function mapsSearch(q){
-  const a=areaQuery();
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(a?`${q} near ${a}`:`${q} near me`)}`;
-}
-function renderLocal(){
-  const a=areaQuery();
-  $("localGrid").innerHTML=LOCAL_LANES.map(x=>`<article class="local-card"><b>${esc(x.title)}</b><span>${a?`Searching around ${esc(localArea.mode==="manual"?a:"your selected browser location")}.`:"Select an area above, or use the official locator."}</span><div class="local-links"><a href="${esc(mapsSearch(x.query))}" target="_blank" rel="noopener noreferrer">Map Search ↗</a><a href="${esc(x.official)}" target="_blank" rel="noopener noreferrer">${esc(x.label)} ↗</a></div></article>`).join("")
-}
-function setupLocation(){
+<div class="network-ticker" id="ticker">
+  <div class="network-ticker-viewport">
+    <div class="network-ticker-track">
+      <div class="network-ticker-set">
+        <span class="network-ticker-label">Veteran Transition Network</span>
+        <a class="network-ticker-app" href="#career-mission">Career Mission</a>
+        <a class="network-ticker-app" href="#skills-notebook">Translate Skills</a>
+        <a class="network-ticker-app" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/">Career Portal</a>
+        <a class="network-ticker-app" href="#education-training">Education & Training</a>
+        <a class="network-ticker-app" href="#entrepreneurship">Entrepreneurship</a>
+        <a class="network-ticker-app" href="#services">Veteran Services</a>
+      </div>
+      <div class="network-ticker-set" aria-hidden="true">
+        <span class="network-ticker-label">Veteran Transition Network</span>
+        <a tabindex="-1" class="network-ticker-app" href="#career-mission">Career Mission</a>
+        <a tabindex="-1" class="network-ticker-app" href="#skills-notebook">Translate Skills</a>
+        <a tabindex="-1" class="network-ticker-app" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/">Career Portal</a>
+        <a tabindex="-1" class="network-ticker-app" href="#education-training">Education & Training</a>
+        <a tabindex="-1" class="network-ticker-app" href="#entrepreneurship">Entrepreneurship</a>
+        <a tabindex="-1" class="network-ticker-app" href="#services">Veteran Services</a>
+      </div>
+    </div>
+  </div>
+  <button class="ticker-control" id="tickerControl" aria-label="Pause veteran transition ticker">Ⅱ</button>
+</div>
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="#top" aria-label="Veterans Career and Resource Hub home">
+      <span class="brand-mark">V</span>
+      <span class="brand-copy">
+        <span class="brand-name">Veterans Career &amp; Resource Hub</span>
+        <span class="brand-sub">One Door · No Wrong Door</span>
+      </span>
+    </a>
+    <nav class="header-links" aria-label="Primary navigation">
+      <a class="career-link" href="#career-mission">Career Mission</a>
+      <a href="#skills-notebook">Skills Translator</a>
+      <a href="#employment">Employment</a>
+      <a href="#education-training">Education</a>
+      <a href="#entrepreneurship">Business</a>
+      <a href="#services">Services</a>
+    </nav>
+    <button class="menu-button" id="menuButton" type="button" aria-label="Open Veterans directory" aria-expanded="false" aria-controls="drawerBg">
+      <span class="menu-lines" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="breadcrumb-bar">
+  <nav class="shell breadcrumbs" aria-label="Breadcrumb">
+    <a href="https://vervenveda.com/">Verve N Veda</a><span>›</span>
+    <span aria-current="page">Veterans Career &amp; Resource Hub</span>
+  </nav>
+</div>
+
+<div class="crisis-strip">
+  Crisis support is available in the United States through the <a href="tel:988">988 Suicide &amp; Crisis Lifeline</a>.
+</div>
+
+<div class="drawer-bg" id="drawerBg" aria-hidden="true">
+  <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div class="drawer-head">
+      <h2 id="drawerTitle">Veterans Directory</h2>
+      <button class="drawer-close" id="closeButton" type="button" aria-label="Close directory">×</button>
+    </div>
+    <p>Search the Career mission, official veteran employment and education resources, service wings, professional tools, and nearby support.</p>
+    <label class="sr-only" for="drawerSearch">Search Veterans directory</label>
+    <input class="drawer-search" id="drawerSearch" type="search" placeholder="Search resume, MOS, GI Bill, VR&E, apprenticeship, business…">
+    <div id="drawerContent"></div>
+  </aside>
+</div>
+
+<main id="main">
+  <section class="hero">
+    <div class="shell hero-inner">
+      <div class="hero-stage">
+        <div>
+          <p class="eyebrow">A Verve N Veda public-service hall</p>
+          <h1>Veterans Career &amp; Resource Hub</h1>
+          <p class="hero-subtitle">Service Translated · Skills Recognized · Next Mission Built</p>
+        </div>
+        <p class="hero-lead">A veteran-centered transition workspace for turning military experience into civilian career direction, professional materials, education or training, meaningful employment, entrepreneurship, and a stable next chapter—without losing access to benefits, health, housing, family, legal, or community support.</p>
+        <div class="hero-actions">
+          <a class="button button-career" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/">Open Career Portal</a>
+          <a class="button button-primary" href="#skills-notebook">Translate My Experience</a>
+          <a class="button button-secondary" href="#official-resources">Official Veteran Resources</a>
+        </div>
+        <div class="hero-stat-grid">
+          <div class="hero-stat"><strong>Direction</strong><span>Identify civilian pathways without reducing a person to one military occupation.</span></div>
+          <div class="hero-stat"><strong>Translation</strong><span>Convert duties, leadership, systems, and training into civilian language.</span></div>
+          <div class="hero-stat"><strong>Preparation</strong><span>Build resumes, portfolios, credentials, education plans, and interview materials.</span></div>
+          <div class="hero-stat"><strong>Launch</strong><span>Employment, federal service, apprenticeship, higher education, or business ownership.</span></div>
+        </div>
+      </div>
+      <button class="scroll-cue" data-scroll="#career-mission">Build the next mission</button>
+    </div>
+  </section>
+
+  <section class="section" id="career-mission">
+    <div class="section-inner">
+      <div class="heading">
+        <p class="kicker">Veteran Career Mission</p>
+        <h2>Translate experience into a civilian next step.</h2>
+        <p>The path is deliberately broader than “find a job.” A veteran may need to understand transferable skills, identify a new field, close a credential gap, use education benefits, seek accommodations, enter apprenticeship, pursue federal employment, or build a business.</p>
+      </div>
+      <div class="mission-path">
+        <article class="mission-card" style="--accent:#315b7b">
+          <span class="mission-step">01</span><h3>Discover Direction</h3>
+          <p>Compare interests, values, strengths, and preferred working conditions with possible civilian pathways.</p>
+          <div class="mission-links">
+            <a class="primary" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/">Khaemenes Career Portal</a>
+            <a href="https://www.mynextmove.org/vets/">My Next Move for Veterans</a>
+          </div>
+        </article>
+        <article class="mission-card" style="--accent:#4f7f7a">
+          <span class="mission-step">02</span><h3>Translate Service</h3>
+          <p>Map military occupations, tasks, systems knowledge, leadership, logistics, technical work, and mission responsibility into civilian language.</p>
+          <div class="mission-links">
+            <a class="primary" href="#skills-notebook">Open Translation Notebook</a>
+            <a href="https://www.mynextmove.org/vets/">Military Transition Search</a>
+          </div>
+        </article>
+        <article class="mission-card" style="--accent:#776b94">
+          <span class="mission-step">03</span><h3>Build the Package</h3>
+          <p>Create a civilian resume, cover letter, professional bio, interview notes, portfolio evidence, and role-specific application materials.</p>
+          <div class="mission-links">
+            <a class="primary" href="https://vervenveda.com/proresource_hub.github.io/">ProReSources / PROSE</a>
+            <a href="#professional-tools">Professional Tools Directory</a>
+          </div>
+        </article>
+        <article class="mission-card" style="--accent:#8a6b3d">
+          <span class="mission-step">04</span><h3>Train &amp; Credential</h3>
+          <p>Identify credential gaps, compare education benefits, consider VR&amp;E, apprenticeship, certificates, trades, or higher education.</p>
+          <div class="mission-links">
+            <a class="primary" href="#education-training">Education &amp; Training</a>
+            <a href="https://www.va.gov/careers-employment/vocational-rehabilitation/">VA VR&amp;E</a>
+          </div>
+        </article>
+        <article class="mission-card" style="--accent:#385c48">
+          <span class="mission-step">05</span><h3>Enter the Market</h3>
+          <p>Use veteran employment services, local workforce centers, federal hiring pathways, apprenticeships, and targeted civilian applications.</p>
+          <div class="mission-links">
+            <a class="primary" href="#employment">Employment Launch</a>
+            <a href="https://www.dol.gov/agencies/vets/veterans/veterans-employment-services">DOL Veterans Employment Services</a>
+          </div>
+        </article>
+        <article class="mission-card" style="--accent:#96594e">
+          <span class="mission-step">06</span><h3>Build a Business</h3>
+          <p>For entrepreneurship, use veteran-specific training, counseling, business planning, contracting, certification, finance, and professional tools.</p>
+          <div class="mission-links">
+            <a class="primary" href="#entrepreneurship">Veteran Entrepreneurship</a>
+            <a href="https://www.sba.gov/about-sba/sba-locations/headquarters-offices/office-veterans-business-development">SBA Veterans Business Development</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="skills-notebook">
+    <div class="section-inner">
+      <div class="heading">
+        <p class="kicker">Military Skills Translation Notebook</p>
+        <h2>Capture what you did—not just what your title was.</h2>
+        <p>This local notebook helps organize civilian-language evidence before opening an official military occupation translator, Career Portal, resume template, or counselor session.</p>
+      </div>
+      <div class="notebook-grid">
+        <article class="notebook-info">
+          <p class="kicker">A better translation question</p>
+          <h3>What responsibility did you actually carry?</h3>
+          <p>A military title rarely tells the whole story. Think in terms of people led, systems operated, logistics coordinated, safety standards followed, decisions made under pressure, training delivered, documentation maintained, equipment managed, quality controlled, or problems solved.</p>
+          <div class="security-note"><strong>Do not enter sensitive information here.</strong> Never store classified information, controlled operational details, Social Security numbers, claim numbers, medical information, passwords, security answers, protected personal data, or anything you would not place in an ordinary civilian resume draft. This notebook is for general career language only.</div>
+          <div class="actions" style="margin-top:18px;justify-content:flex-start">
+            <a class="button button-primary" href="https://www.mynextmove.org/vets/">Open Military Transition Search</a>
+            <a class="button button-secondary" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/">Open Career Portal</a>
+          </div>
+        </article>
+
+        <article class="notebook-panel">
+          <h3>My Civilian Translation Draft</h3>
+          <p>Saved only in this browser unless you export it yourself.</p>
+          <form class="notebook-form" id="translationForm">
+            <div>
+              <label class="form-label" for="serviceBranch">Service branch / component</label>
+              <input class="field" id="serviceBranch" maxlength="80" placeholder="Example: Army Reserve">
+            </div>
+            <div>
+              <label class="form-label" for="militaryRole">MOS / rating / AFSC / role</label>
+              <input class="field" id="militaryRole" maxlength="100" placeholder="General occupational title or code">
+            </div>
+            <div class="full">
+              <label class="form-label" for="responsibilities">Responsibilities in civilian language</label>
+              <textarea class="field" id="responsibilities" maxlength="2500" placeholder="Led…, coordinated…, maintained…, trained…, analyzed…, planned…, documented…, inspected…, operated…"></textarea>
+            </div>
+            <div class="full">
+              <label class="form-label" for="skills">Transferable skills</label>
+              <textarea class="field" id="skills" maxlength="1800" placeholder="Leadership, logistics, troubleshooting, project coordination, quality control, instruction, technical systems, documentation…"></textarea>
+            </div>
+            <div>
+              <label class="form-label" for="credentials">Civilian-safe credentials</label>
+              <textarea class="field" id="credentials" maxlength="1000" placeholder="Licenses, certificates, training, education—no sensitive clearance details"></textarea>
+            </div>
+            <div>
+              <label class="form-label" for="targetRoles">Civilian roles to explore</label>
+              <textarea class="field" id="targetRoles" maxlength="1000" placeholder="Operations manager, technician, project coordinator…"></textarea>
+            </div>
+            <div class="full">
+              <label class="form-label" for="gaps">Education / credential gaps to investigate</label>
+              <textarea class="field" id="gaps" maxlength="1400" placeholder="State license, certification, degree prerequisite, portfolio, software skill…"></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="primary" type="submit">Save Locally</button>
+              <button id="exportTranslation" type="button">Export JSON</button>
+              <button id="clearTranslation" type="button">Clear Notebook</button>
+            </div>
+          </form>
+
+          <div class="progress-board" id="progressBoard"></div>
+          <div class="progress-score" id="progressScore">0 of 6 mission steps marked complete</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="employment">
+    <div class="section-inner">
+      <div class="heading">
+        <p class="kicker">Employment Launch</p>
+        <h2>Use veteran-specific employment pathways alongside ordinary job search.</h2>
+        <p>Military-to-civilian transition may involve state veteran employment services, workforce centers, VR&amp;E, federal hiring pathways, apprenticeship, or direct private-sector applications.</p>
+      </div>
+      <div class="track-grid">
+        <article class="track-card" style="--accent:#315b7b">
+          <p class="kicker">Federal &amp; State Support</p><h3>DOL VETS</h3>
+          <p>Veterans’ Employment and Training Service provides veteran employment resources, state pathways, transition materials, and workforce connections.</p>
+          <div class="track-links">
+            <a href="https://www.dol.gov/agencies/vets/veterans/veterans-employment-services"><span>Veterans Employment Services</span><span>↗</span></a>
+            <a href="https://www.dol.gov/agencies/vets/programs/findajob"><span>Find Employment Services</span><span>↗</span></a>
+          </div>
+        </article>
+        <article class="track-card" style="--accent:#4f7f7a">
+          <p class="kicker">Service-Connected Disability</p><h3>VA VR&amp;E</h3>
+          <p>Eligible Veterans and service members may receive employment, training, education, reemployment, self-employment, or independent-living support.</p>
+          <div class="track-links">
+            <a href="https://www.va.gov/careers-employment/vocational-rehabilitation/"><span>Veteran Readiness &amp; Employment</span><span>↗</span></a>
+            <a href="https://www.va.gov/careers-employment/vocational-rehabilitation/programs/"><span>Explore VR&amp;E Tracks</span><span>↗</span></a>
+          </div>
+        </article>
+        <article class="track-card" style="--accent:#776b94">
+          <p class="kicker">Federal Careers</p><h3>USAJOBS Veterans</h3>
+          <p>Learn about Veterans’ Preference and veteran-specific hiring options, then search federal announcements that identify who may apply.</p>
+          <div class="track-links">
+            <a href="https://help.usajobs.gov/working-in-government/unique-hiring-paths/veterans"><span>Veteran Hiring Paths</span><span>↗</span></a>
+            <a href="https://www.usajobs.gov/"><span>Search USAJOBS</span><span>↗</span></a>
+          </div>
+        </article>
+        <article class="track-card" style="--accent:#8a6b3d">
+          <p class="kicker">Earn While Learning</p><h3>Registered Apprenticeship</h3>
+          <p>Military experience may support advanced standing, while apprenticeships combine paid work experience, classroom learning, and recognized credentials.</p>
+          <div class="track-links">
+            <a href="https://www.apprenticeship.gov/help/what-apprenticeship-programs-exist-service-members-andor-veterans"><span>Veteran Apprenticeship Resources</span><span>↗</span></a>
+            <a href="https://www.apprenticeship.gov/"><span>Apprenticeship.gov</span><span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="education-training">
+    <div class="section-inner">
+      <div class="heading">
+        <p class="kicker">Education · Training · Credentials</p>
+        <h2>Choose training because it closes a real gap.</h2>
+        <p>Before committing time or benefits, compare the target career’s actual requirements, check program approval, understand benefit eligibility, and verify whether a credential is required by employers or state law.</p>
+      </div>
+      <div class="track-grid">
+        <article class="track-card" style="--accent:#315b7b">
+          <p class="kicker">Official Education Benefits</p><h3>VA Education &amp; Training</h3>
+          <p>Start with official benefit information before making school, training, or financial commitments.</p>
+          <div class="track-links">
+            <a href="https://benefits.va.gov/gibill/"><span>VA Education &amp; Training</span><span>↗</span></a>
+            <a href="https://www.va.gov/education/"><span>Education Benefits</span><span>↗</span></a>
+          </div>
+        </article>
+        <article class="track-card" style="--accent:#4f7f7a">
+          <p class="kicker">Compare Programs</p><h3>GI Bill Comparison Tool</h3>
+          <p>Compare schools, employers, and approved education or training options using VA information before choosing a program.</p>
+          <div class="track-links">
+            <a href="https://www.va.gov/education/gi-bill-comparison-tool/schools-and-employers"><span>Open Comparison Tool</span><span>↗</span></a>
+          </div>
+        </article>
+        <article class="track-card" style="--accent:#776b94">
+          <p class="kicker">Academic Exploration</p><h3>Khaemenes Higher Learning</h3>
+          <p>Explore advanced mathematics, research, technology, professional learning, and higher-level academic pathways without implying VA approval or accreditation.</p>
+          <div class="track-links">
+            <a href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/"><span>Open Higher Learning</span><span>↗</span></a>
+            <a href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/"><span>Career Portal</span><span>↗</span></a>
+          </div>
+        </article>
+        <article class="track-card" style="--accent:#8a6b3d">
+          <p class="kicker">Professional Preparation</p><h3>ProReSources</h3>
+          <p>Use PROSE templates and professional tools to prepare resumes, letters, project briefs, business plans, reports, portfolios, and other civilian work products.</p>
+          <div class="track-links">
+            <a href="https://vervenveda.com/proresource_hub.github.io/"><span>Open ProReSources</span><span>↗</span></a>
+            <a href="#professional-tools"><span>Browse Dynamic Tools</span><span>↓</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="entrepreneurship">
+    <div class="section-inner">
+      <div class="heading">
+        <p class="kicker">Veteran Entrepreneurship</p>
+        <h2>Business ownership is a career path too.</h2>
+        <p>SBA’s veteran business programs support service members, Veterans, National Guard and Reserve members, military spouses, and families through training, counseling, mentorship, contracting resources, and business development.</p>
+      </div>
+      <div class="track-grid">
+        <article class="track-card" style="--accent:#315b7b">
+          <p class="kicker">Business Development</p><h3>SBA Veterans Office</h3>
+          <p>Use the Office of Veterans Business Development as the official starting point for veteran entrepreneurship programs and support.</p>
+          <div class="track-links"><a href="https://www.sba.gov/about-sba/sba-locations/headquarters-offices/office-veterans-business-development"><span>Office of Veterans Business Development</span><span>↗</span></a></div>
+        </article>
+        <article class="track-card" style="--accent:#4f7f7a">
+          <p class="kicker">Counseling &amp; Mentorship</p><h3>Veterans Business Outreach Centers</h3>
+          <p>VBOCs provide workshops, training, counseling, mentorship, and referrals for starting or growing a business.</p>
+          <div class="track-links"><a href="https://www.sba.gov/local-assistance/resource-partners/veterans-business-outreach-center-vboc-program"><span>Find VBOC Support</span><span>↗</span></a></div>
+        </article>
+        <article class="track-card" style="--accent:#776b94">
+          <p class="kicker">Entrepreneurship Training</p><h3>Boots to Business</h3>
+          <p>SBA’s entrepreneurship training is part of the military transition ecosystem and provides foundational business-ownership education.</p>
+          <div class="track-links"><a href="https://www.sba.gov/sba-learning-platform/boots-business"><span>Boots to Business</span><span>↗</span></a></div>
+        </article>
+        <article class="track-card" style="--accent:#8a6b3d">
+          <p class="kicker">Federal Contracting</p><h3>Veteran Small Business Certification</h3>
+          <p>Qualified veteran-owned and service-disabled veteran-owned small businesses can use SBA certification pathways for federal contracting opportunities.</p>
+          <div class="track-links"><a href="https://www.sba.gov/federal-contracting/contracting-assistance-programs/veteran-contracting-assistance-programs"><span>Veteran Contracting Assistance</span><span>↗</span></a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="professional-tools">
+    <div class="section-inner">
+      <div class="heading">
+        <p class="kicker">Verve N Veda Professional Tool Federation</p>
+        <h2>Career tools can grow without rewriting this page.</h2>
+        <p>The Veterans Hub reads the central ecosystem resource registry and dynamically surfaces career, professional writing, business, finance, technology, design, research, and productivity resources appropriate to adult or Higher Learning audiences.</p>
+      </div>
+      <div class="catalog" style="color:var(--ink)">
+        <div class="toolbar">
+          <label class="sr-only" for="toolSearch">Search professional tools</label>
+          <input class="field" id="toolSearch" type="search" placeholder="Search resume, writing, business, CAD, finance, coding, research…">
+          <label class="sr-only" for="toolCategory">Filter tool category</label>
+          <select class="field" id="toolCategory"></select>
+          <button class="tool-button" id="refreshTools" type="button">Refresh Federation</button>
+        </div>
+        <p class="status" id="toolStatus" aria-live="polite">Loading professional resource federation…</p>
+        <div class="tool-grid" id="toolGrid"></div>
+        <div class="empty" id="toolEmpty">No professional resource matched that search.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="section-inner">
+      <div class="heading">
+        <p class="kicker">One Door · No Wrong Door</p>
+        <h2>Career transition does not happen in isolation.</h2>
+        <p>Benefits, health, housing, family stability, legal issues, records, and community support can directly affect a successful transition. These service wings remain close without dominating the career workspace.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card" style="--accent:#294b40"><h3>Benefits &amp; Records</h3><p>Disability compensation, pension, claims, decision reviews, accredited representation, and military/VA records.</p><div class="service-links"><a href="https://www.va.gov/disability/"><span>Disability Compensation</span><span>↗</span></a><a href="https://www.va.gov/decision-reviews/"><span>Decision Reviews</span><span>↗</span></a><a href="https://www.va.gov/records/"><span>Military &amp; VA Records</span><span>↗</span></a></div></article>
+        <article class="service-card" style="--accent:#426c72"><h3>Health &amp; Wellness</h3><p>VA health care, mental health information, PTSD resources, caregiver support, and supportive wellness.</p><div class="service-links"><a href="https://www.va.gov/health-care/"><span>VA Health Care</span><span>↗</span></a><a href="https://www.mentalhealth.va.gov/"><span>VA Mental Health</span><span>↗</span></a><a href="https://www.ptsd.va.gov/"><span>National Center for PTSD</span><span>↗</span></a></div></article>
+        <article class="service-card" style="--accent:#8a6346"><h3>Housing &amp; Stability</h3><p>Housing assistance, homelessness prevention and response, supportive housing, and wider stability resources.</p><div class="service-links"><a href="https://www.va.gov/housingresources/"><span>VA Housing Resources</span><span>↗</span></a><a href="https://www.va.gov/housing-assistance/"><span>Housing Assistance</span><span>↗</span></a><a href="https://vervenveda.com/homeless.github.io/"><span>One Door Stability Hub</span><span>↗</span></a></div></article>
+        <article class="service-card" style="--accent:#6a5c73"><h3>Family &amp; Caregivers</h3><p>Caregiver support, spouse/dependent benefits, survivors, burials, memorials, and family services.</p><div class="service-links"><a href="https://www.va.gov/family-and-caregiver-benefits/"><span>Family &amp; Caregiver Benefits</span><span>↗</span></a><a href="https://www.caregiver.va.gov/"><span>Caregiver Support</span><span>↗</span></a><a href="https://www.va.gov/survivors/"><span>Survivor Benefits</span><span>↗</span></a></div></article>
+        <article class="service-card" style="--accent:#6a4a42"><h3>Legal &amp; Claims Help</h3><p>Accredited representation, decision reviews, veterans legal-help pathways, and public legal resources.</p><div class="service-links"><a href="https://www.va.gov/get-help-from-accredited-representative/"><span>Accredited Representative</span><span>↗</span></a><a href="https://www.va.gov/ogc/legalservices.asp"><span>VA Legal Help</span><span>↗</span></a><a href="https://vervenveda.com/firmament.github.io/"><span>Firmament Law</span><span>↗</span></a></div></article>
+        <article class="service-card" style="--accent:#486a57"><h3>Community &amp; Service</h3><p>State veteran offices, VA facilities, volunteering, local support, and continuing community contribution.</p><div class="service-links"><a href="https://www.va.gov/resources/state-veterans-affairs-offices/"><span>State Veterans Offices</span><span>↗</span></a><a href="https://www.va.gov/find-locations/"><span>VA Location Finder</span><span>↗</span></a><a href="https://www.volunteer.va.gov/volunteer/"><span>Volunteer with VA</span><span>↗</span></a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="official-resources">
+    <div class="section-inner">
+      <div class="heading">
+        <p class="kicker">Verified Official Resource Directory</p>
+        <h2>Go to the authoritative source before making a high-stakes decision.</h2>
+        <p>Program eligibility, benefit amounts, school approval, job openings, contracting rules, and local service capacity can change. This directory is intentionally curated rather than automatically generated.</p>
+      </div>
+      <div class="directory-shell">
+        <div class="directory-tools">
+          <label class="sr-only" for="officialSearch">Search official resources</label>
+          <input class="field" id="officialSearch" type="search" placeholder="Search VR&E, jobs, GI Bill, federal hiring, apprenticeship, housing…">
+          <label class="sr-only" for="officialCategory">Filter official resources</label>
+          <select class="field" id="officialCategory"></select>
+          <button class="tool-button" id="clearOfficial" type="button">Clear Search</button>
+        </div>
+        <p class="status" id="officialStatus" aria-live="polite"></p>
+        <div class="resource-grid" id="officialGrid"></div>
+        <div class="empty" id="officialEmpty">No official resource matched that search.</div>
+      </div>
+      <div class="notice"><strong>Public-service notice:</strong> Verve N Veda is not the U.S. Department of Veterans Affairs, Department of Labor, Small Business Administration, or another government agency. The hub organizes pathways and educational tools; it does not decide eligibility, certify schools, guarantee employment, award benefits, provide legal representation, or replace professional medical or legal care.</div>
+    </div>
+  </section>
+
+  <section class="section" id="nearby">
+    <div class="section-inner">
+      <div class="heading">
+        <p class="kicker">Nearby Veteran &amp; Workforce Support</p>
+        <h2>Use location only when you choose.</h2>
+        <p>Find VA facilities, Vet Centers, accredited claims help, American Job Centers, veteran business support, housing pathways, and legal resources. Call or verify before traveling because hours and local capacity can change.</p>
+      </div>
+      <div class="location-shell">
+        <article class="location-panel">
+          <h3>Your Search Area</h3>
+          <p>Use browser location for this tab only, or enter a city, state, or ZIP. No location is requested automatically.</p>
+          <div class="location-actions">
+            <button class="button button-primary" id="useLocation" type="button">Use My Location</button>
+            <button class="button button-secondary" id="clearLocation" type="button">Clear Location</button>
+          </div>
+          <div class="location-entry">
+            <input class="field" id="manualLocation" maxlength="80" placeholder="City, state, or ZIP" autocomplete="postal-code">
+            <button class="tool-button" id="useManualLocation" type="button">Use Area</button>
+          </div>
+          <div class="location-status" id="locationStatus" role="status" aria-live="polite">No location selected. Official national locators still work without sharing a location here.</div>
+          <div class="location-privacy"><strong>Privacy:</strong> browser coordinates stay only in JavaScript memory for the open tab. They are not saved to localStorage or transmitted to Verve N Veda. A map search only receives location information when you deliberately open that search.</div>
+        </article>
+        <article class="local-results">
+          <h3>Useful Doorways Near Me</h3>
+          <p>Each card pairs a map-style nearby search with an official or established national pathway.</p>
+          <div class="local-grid" id="localGrid"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final">
+    <div class="section-inner">
+      <p class="kicker">Veterans Career &amp; Resource Hub</p>
+      <h2>The next mission does not erase the service that came before it.</h2>
+      <p>Military experience can become leadership, technical expertise, teaching, skilled trades, research, public service, entrepreneurship, professional practice, higher education, or a completely new direction. The purpose of this hub is to make those next steps visible and usable.</p>
+      <div class="actions">
+        <a class="button button-career" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/">Open Career Portal</a>
+        <a class="button button-secondary" href="#skills-notebook">Return to Skills Notebook</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="shell footer-inner">
+    <span><strong>Veterans Career &amp; Resource Hub</strong><br><small>One Door · No Wrong Door · © <span id="year"></span> Jennifer Kay Pearl · Verve N Veda</small></span>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#career-mission">Career Mission</a><a href="#skills-notebook">Skills</a><a href="#employment">Employment</a><a href="#education-training">Education</a><a href="#entrepreneurship">Business</a><a href="#services">Services</a><a href="#nearby">Near Me</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="toast" id="toast" aria-live="polite"></div>
+
+<script>
+(() => {
+  "use strict";
+
+  const NOTEBOOK_KEY="vnv-veterans-career-translation-v1";
+  const PROGRESS_KEY="vnv-veterans-career-mission-progress-v1";
+  const REGISTRY_URL="https://vervenveda.com/assessment-engine/mentor/registry/ecosystem-resources.json";
+  const $=id=>document.getElementById(id);
+  const $$=(selector,root=document)=>[...root.querySelectorAll(selector)];
+  const normalize=value=>String(value||"").toLowerCase().normalize("NFKD").replace(/[^\p{L}\p{N}]+/gu," ").trim();
+  const escapeHTML=value=>String(value??"").replace(/[&<>'"]/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[ch]));
+  const readJSON=(key,fallback)=>{try{const raw=localStorage.getItem(key);return raw?JSON.parse(raw):fallback}catch{return fallback}};
+  const writeJSON=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}};
+  const toast=message=>{const node=$("toast");node.textContent=message;node.classList.add("show");clearTimeout(toast.timer);toast.timer=setTimeout(()=>node.classList.remove("show"),2200)};
+
+  const MISSION_STEPS=[
+    {id:"direction",title:"Career direction explored",detail:"Career Portal or civilian occupation exploration"},
+    {id:"translation",title:"Military experience translated",detail:"Responsibilities and transferable skills drafted"},
+    {id:"package",title:"Professional package started",detail:"Resume, cover letter, portfolio, or professional bio"},
+    {id:"credential",title:"Credential gaps checked",detail:"Licensure, certificate, degree, or training requirements"},
+    {id:"market",title:"Employment pathway launched",detail:"Applications, workforce center, federal hiring, or apprenticeship"},
+    {id:"business",title:"Entrepreneurship considered",detail:"Only if business ownership fits the transition goal"}
+  ];
+
+  const OFFICIAL=[
+    {title:"VA Careers & Employment",category:"Employment",url:"https://www.va.gov/careers-employment/",icon:"VA",description:"Official VA employment, career counseling, VR&E, transition, and veteran business pathways."},
+    {title:"Veteran Readiness & Employment (VR&E)",category:"Employment",url:"https://www.va.gov/careers-employment/vocational-rehabilitation/",icon:"VR",description:"Chapter 31 employment and training services for eligible Veterans and service members with service-connected disabilities."},
+    {title:"VR&E Support-and-Services Tracks",category:"Employment",url:"https://www.va.gov/careers-employment/vocational-rehabilitation/programs/",icon:"5T",description:"Reemployment, Rapid Access to Employment, Self-Employment, Long-Term Services, and Independent Living tracks."},
+    {title:"DOL Veterans Employment Services",category:"Employment",url:"https://www.dol.gov/agencies/vets/veterans/veterans-employment-services",icon:"DV",description:"Veteran employment resources, state pathways, military transition tools, industry resources, and workforce connections."},
+    {title:"My Next Move for Veterans",category:"Skills Translation",url:"https://www.mynextmove.org/vets/",icon:"MN",description:"Explore 900+ civilian careers and use military occupation information to identify related civilian work."},
+    {title:"USAJOBS Veterans",category:"Federal Employment",url:"https://help.usajobs.gov/working-in-government/unique-hiring-paths/veterans",icon:"US",description:"Official information on Veterans’ Preference and veteran-specific federal hiring options."},
+    {title:"Apprenticeship.gov Veteran Resources",category:"Training",url:"https://www.apprenticeship.gov/help/what-apprenticeship-programs-exist-service-members-andor-veterans",icon:"AP",description:"Military experience, advanced standing, SkillBridge connections, and Registered Apprenticeship information."},
+    {title:"VA Education & Training",category:"Education",url:"https://benefits.va.gov/gibill/",icon:"GI",description:"Official GI Bill and education/training information, benefit pathways, and program guidance."},
+    {title:"GI Bill Comparison Tool",category:"Education",url:"https://www.va.gov/education/gi-bill-comparison-tool/schools-and-employers",icon:"CT",description:"Compare schools, employers, and education or training programs using VA information."},
+    {title:"SBA Office of Veterans Business Development",category:"Business",url:"https://www.sba.gov/about-sba/sba-locations/headquarters-offices/office-veterans-business-development",icon:"SB",description:"Official SBA veteran entrepreneurship programs, training, counseling, capital, contracting, and business-development resources."},
+    {title:"Veterans Business Outreach Centers",category:"Business",url:"https://www.sba.gov/local-assistance/resource-partners/veterans-business-outreach-center-vboc-program",icon:"VB",description:"Veteran-focused business workshops, training, counseling, mentorship, and referrals."},
+    {title:"Boots to Business",category:"Business",url:"https://www.sba.gov/sba-learning-platform/boots-business",icon:"B2",description:"SBA entrepreneurship education connected to the military transition ecosystem."},
+    {title:"Veteran Contracting Assistance",category:"Business",url:"https://www.sba.gov/federal-contracting/contracting-assistance-programs/veteran-contracting-assistance-programs",icon:"VC",description:"Veteran-owned and service-disabled veteran-owned business federal contracting information."},
+    {title:"VA Health Care",category:"Health",url:"https://www.va.gov/health-care/",icon:"H",description:"Official VA health-care eligibility, enrollment, locations, and services."},
+    {title:"VA Mental Health",category:"Health",url:"https://www.mentalhealth.va.gov/",icon:"MH",description:"Mental-health treatment information, recovery resources, and VA support pathways."},
+    {title:"National Center for PTSD",category:"Health",url:"https://www.ptsd.va.gov/",icon:"PT",description:"Evidence-based PTSD education, treatment information, and self-help resources."},
+    {title:"VA Housing Resources",category:"Housing",url:"https://www.va.gov/housingresources/",icon:"HR",description:"Veteran homelessness prevention, emergency support, housing, and service connections."},
+    {title:"VA Housing Assistance",category:"Housing",url:"https://www.va.gov/housing-assistance/",icon:"HA",description:"VA-backed home loans, housing grants, refinancing, and housing assistance."},
+    {title:"Military & VA Records",category:"Records",url:"https://www.va.gov/records/",icon:"R",description:"Official pathways for military records, discharge papers, and VA records."},
+    {title:"Accredited Representative",category:"Legal & Claims",url:"https://www.va.gov/get-help-from-accredited-representative/",icon:"AR",description:"Find a VA-accredited VSO representative, attorney, or claims agent."},
+    {title:"State Veterans Affairs Offices",category:"Community",url:"https://www.va.gov/resources/state-veterans-affairs-offices/",icon:"ST",description:"Locate state-level veterans offices and official benefits assistance."},
+    {title:"VA Locations",category:"Community",url:"https://www.va.gov/find-locations/",icon:"LOC",description:"Find VA medical centers, clinics, regional offices, Vet Centers, and other VA facilities."}
+  ];
+
+  const TOOL_CATEGORIES={
+    all:"All Professional Tools",
+    career:"Career & Employment",
+    writing:"Writing & Communication",
+    business:"Business & Entrepreneurship",
+    finance:"Finance & Quantitative",
+    technology:"Technology & Coding",
+    design:"Engineering & Design",
+    research:"Research & Information",
+    productivity:"Productivity & Workplace"
+  };
+  const CORE_TOOLS=[
+    {id:"career-portal",title:"Khaemenes Career Portal",category:"career",kind:"Career",icon:"C",url:"https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/",description:"Career assessment, mentor interpretation, Career Star reflection, professional skills, and career exploration.",repository:"Khaemenes Higher Learning",tags:["career","assessment","employment"]},
+    {id:"proresources",title:"ProReSources",category:"writing",kind:"Professional Hub",icon:"PR",url:"https://vervenveda.com/proresource_hub.github.io/",description:"PROSE professional templates, writing tools, CAD, calculators, file tools, productivity, and portfolio-building resources.",repository:"ProReSources",tags:["prose","resume","writing","templates","cad"]},
+    {id:"higher-learning",title:"Khaemenes Higher Learning",category:"career",kind:"Education",icon:"HL",url:"https://vervenveda.com/Khaemenes_Higher_Learning.github.io/",description:"Advanced study, research, mathematics, technology, and professional learning.",repository:"Khaemenes Higher Learning",tags:["higher learning","education","professional"]},
+    {id:"finance",title:"Finance Hall",category:"finance",kind:"Finance",icon:"$",url:"https://vervenveda.com/finance.github.io/",description:"Budgeting, credit, financial literacy, business, planning, and quantitative tools.",repository:"Finance",tags:["finance","budget","business"]},
+    {id:"plera",title:"PLERA Search",category:"research",kind:"Research",icon:"PS",url:"https://vervenveda.com/PLERASearch.github.io/",description:"Research and public-information discovery gateway.",repository:"PLERA",tags:["research","search","information"]}
+  ];
+  const BLOCKED=new Set(["admin-only","restricted","archived","campaign","unclassified"]);
+  let tools=[...CORE_TOOLS],toolMeta={generatedAt:null,error:null};
+
+  function toolText(r){return normalize([r.title,r.description,r.repository,r.classification,r.resourceType,r.learningValue,...(r.domains||[]),...(r.skills||[]),...(r.tags||[]),...(r.subjects||[])].filter(Boolean).join(" "))}
+  function classifyTool(r){
+    const text=toolText(r),has=(...terms)=>terms.some(t=>text.includes(normalize(t)));
+    if(has("resume","career","employment","interview","career readiness"))return"career";
+    if(has("finance","budget","calculator","accounting","economics","money"))return"finance";
+    if(has("cad","engineering","design","architecture","prototype"))return"design";
+    if(has("coding","code","software","technology","python","javascript","digital"))return"technology";
+    if(has("business","entrepreneur","startup","management","operations","sales"))return"business";
+    if(has("research","citation","search","evidence","library","archive"))return"research";
+    if(has("task","planning","checklist","workflow","productivity","organize","meeting"))return"productivity";
+    return"writing";
+  }
+  function toolEligible(r){
+    if(!r||typeof r!=="object"||!r.url)return false;
+    if(r.recommendable===false||r.mentorEligible===false)return false;
+    if(BLOCKED.has(normalize(r.classification)))return false;
+    const audiences=(r.audiences||[]).map(normalize);
+    if(audiences.length&&!audiences.some(a=>["adult","higher learning","high","student","educator"].includes(a)))return false;
+    const text=toolText(r);
+    return ["career","professional","writing","resume","business","finance","technology","coding","cad","design","research","productivity","employment","interview","project"].some(t=>text.includes(t));
+  }
+  function canonicalURL(url){try{const u=new URL(url,location.href);return(u.origin+u.pathname).replace(/^https:\/\/vervenveda\.github\.io\//i,"https://vervenveda.com/").replace(/\/+$/,"").toLowerCase()}catch{return normalize(url)}}
+  function mergeTools(dynamic){
+    const map=new Map();
+    [...CORE_TOOLS,...dynamic].forEach(r=>{const key=canonicalURL(r.url);if(!key)return;if(!map.has(key)||r.manifestPath)map.set(key,r)});
+    return[...map.values()];
+  }
+  async function loadTools(){
+    try{
+      const response=await fetch(REGISTRY_URL,{cache:"no-store"});
+      if(!response.ok)throw new Error(`registry ${response.status}`);
+      const payload=await response.json();
+      const dynamic=(Array.isArray(payload.resources)?payload.resources:[]).filter(toolEligible).map(r=>({
+        id:r.id||`registry-${Math.random().toString(36).slice(2)}`,
+        title:r.title||"Professional Resource",
+        category:classifyTool(r),
+        kind:r.resourceType||r.classification||"Resource",
+        icon:(r.title||"R").replace(/[^A-Za-z0-9]/g,"").slice(0,2).toUpperCase()||"R",
+        url:r.url,
+        description:r.description||"Connected professional resource.",
+        repository:r.repository||r.sourceId||"Verve N Veda",
+        tags:[...(r.tags||[]),...(r.skills||[]),...(r.domains||[])],
+        manifestPath:r.manifestPath||null
+      }));
+      tools=mergeTools(dynamic);toolMeta={generatedAt:payload.generatedAt||null,error:null};
+    }catch(error){
+      tools=[...CORE_TOOLS];toolMeta={generatedAt:null,error:String(error?.message||error)};
+    }
+    renderTools();renderDrawer($("drawerSearch").value.trim());
+  }
+
+  const toolState={query:"",category:"all"};
+  function renderToolCategories(){$("toolCategory").innerHTML=Object.entries(TOOL_CATEGORIES).map(([v,l])=>`<option value="${v}">${l}</option>`).join("")}
+  function filteredTools(){
+    const q=normalize(toolState.query);
+    return tools.filter(r=>(!q||toolText(r).includes(q))&&(toolState.category==="all"||r.category===toolState.category));
+  }
+  function renderTools(){
+    const list=filteredTools();
+    $("toolGrid").innerHTML=list.slice(0,100).map(r=>`<article class="tool-card"><span class="tool-icon">${escapeHTML(r.icon||"R")}</span><span class="badge">${escapeHTML(r.kind||"Resource")}</span><h3>${escapeHTML(r.title)}</h3><p>${escapeHTML(r.description||"Connected professional resource.")}</p><span class="destination">${escapeHTML(TOOL_CATEGORIES[r.category]||r.category)}</span><a class="tool-link" href="${r.url}">Open Resource</a></article>`).join("");
+    const source=toolMeta.generatedAt?` · federation ${new Date(toolMeta.generatedAt).toLocaleString()}`:toolMeta.error?" · core fallback":"";
+    $("toolStatus").textContent=`Showing ${list.length} of ${tools.length} professional resources${source}.`;
+    $("toolEmpty").classList.toggle("show",list.length===0);
+  }
+  $("toolSearch").addEventListener("input",e=>{toolState.query=e.target.value.trim();renderTools()});
+  $("toolCategory").addEventListener("change",e=>{toolState.category=e.target.value;renderTools()});
+  $("refreshTools").addEventListener("click",loadTools);
+
+  function renderOfficialCategories(){
+    const cats=[...new Set(OFFICIAL.map(r=>r.category))].sort();
+    $("officialCategory").innerHTML=`<option value="all">All official resources</option>${cats.map(c=>`<option value="${escapeHTML(c)}">${escapeHTML(c)}</option>`).join("")}`;
+  }
+  function renderOfficial(){
+    const q=normalize($("officialSearch").value),cat=$("officialCategory").value;
+    const rows=OFFICIAL.filter(r=>(!q||normalize(`${r.title} ${r.category} ${r.description}`).includes(q))&&(cat==="all"||r.category===cat));
+    $("officialGrid").innerHTML=rows.map(r=>`<a class="resource-card" href="${r.url}"><div class="resource-meta"><span>${escapeHTML(r.category)}</span><span>${escapeHTML(r.icon)}</span></div><h3>${escapeHTML(r.title)}</h3><p>${escapeHTML(r.description)}</p><span class="resource-open">Open official resource ↗</span></a>`).join("");
+    $("officialStatus").textContent=`${rows.length} of ${OFFICIAL.length} curated official resources shown. Research review: August 12, 2026.`;
+    $("officialEmpty").classList.toggle("show",rows.length===0);
+  }
+  $("officialSearch").addEventListener("input",renderOfficial);
+  $("officialCategory").addEventListener("change",renderOfficial);
+  $("clearOfficial").addEventListener("click",()=>{$("officialSearch").value="";$("officialCategory").value="all";renderOfficial();$("officialSearch").focus()});
+
+  function loadNotebook(){
+    const data=readJSON(NOTEBOOK_KEY,{});
+    ["serviceBranch","militaryRole","responsibilities","skills","credentials","targetRoles","gaps"].forEach(id=>{$(id).value=data[id]||""});
+  }
+  function saveNotebook(){
+    const data={};
+    ["serviceBranch","militaryRole","responsibilities","skills","credentials","targetRoles","gaps"].forEach(id=>data[id]=$(id).value.trim());
+    data.updatedAt=new Date().toISOString();
+    writeJSON(NOTEBOOK_KEY,data);return data;
+  }
+  $("translationForm").addEventListener("submit",e=>{e.preventDefault();saveNotebook();toast("Career translation notebook saved locally.")});
+  $("clearTranslation").addEventListener("click",()=>{localStorage.removeItem(NOTEBOOK_KEY);$("translationForm").reset();toast("Career translation notebook cleared.")});
+  $("exportTranslation").addEventListener("click",()=>{
+    const data=saveNotebook(),progress=readJSON(PROGRESS_KEY,{});
+    const payload={type:"vnv-veteran-career-translation",exportedAt:new Date().toISOString(),notebook:data,missionProgress:progress,privacyNote:"User-created career language only. Do not store classified or sensitive information."};
+    const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");
+    a.href=url;a.download="veteran-career-translation.json";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);toast("Career translation export created.");
+  });
+
+  function renderProgress(){
+    const state=readJSON(PROGRESS_KEY,{});
+    $("progressBoard").innerHTML=MISSION_STEPS.map(step=>`<label class="progress-row"><input type="checkbox" data-progress="${step.id}" ${state[step.id]?"checked":""}><span><strong>${escapeHTML(step.title)}</strong><small>${escapeHTML(step.detail)}</small></span><span>${state[step.id]?"✓":"○"}</span></label>`).join("");
+    $$("[data-progress]").forEach(box=>box.addEventListener("change",()=>{
+      const next=readJSON(PROGRESS_KEY,{});
+      next[box.dataset.progress]=box.checked;writeJSON(PROGRESS_KEY,next);renderProgress();
+    }));
+    const count=MISSION_STEPS.filter(s=>state[s.id]).length;
+    $("progressScore").textContent=`${count} of ${MISSION_STEPS.length} mission steps marked complete`;
+  }
+
+  let localArea={mode:"none",label:"",lat:null,lng:null};
+  const LOCAL_LANES=[
+    {title:"VA Facilities",query:"VA medical center clinic veteran affairs",official:"https://www.va.gov/find-locations/",label:"VA Location Finder"},
+    {title:"Vet Centers",query:"Vet Center veterans counseling",official:"https://www.va.gov/find-locations/",label:"VA Location Finder"},
+    {title:"Accredited Claims Help",query:"Veterans Service Officer accredited representative",official:"https://www.va.gov/get-help-from-accredited-representative/",label:"Accredited Representative"},
+    {title:"American Job Centers",query:"American Job Center workforce center",official:"https://www.dol.gov/agencies/vets/programs/findajob",label:"DOL Employment Services"},
+    {title:"Veteran Business Support",query:"Veterans Business Outreach Center",official:"https://www.sba.gov/local-assistance/resource-partners/veterans-business-outreach-center-vboc-program",label:"SBA VBOC"},
+    {title:"Housing Support",query:"VA homeless veteran services SSVF",official:"https://www.va.gov/housingresources/",label:"VA Housing Resources"},
+    {title:"Veteran Legal Help",query:"veteran legal aid pro bono clinic",official:"https://www.va.gov/ogc/legalservices.asp",label:"VA Legal Help"},
+    {title:"State Veterans Office",query:"state veterans affairs office",official:"https://www.va.gov/resources/state-veterans-affairs-offices/",label:"State Veterans Offices"}
+  ];
+  function cleanArea(v){return String(v||"").replace(/[<>{}\[\]]/g,"").trim().slice(0,80)}
+  function areaQuery(){if(localArea.mode==="coords")return`${localArea.lat.toFixed(5)},${localArea.lng.toFixed(5)}`;if(localArea.mode==="manual")return localArea.label;return""}
+  function mapsSearch(q){const a=areaQuery();return`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(a?`${q} near ${a}`:`${q} near me`)}`}
+  function renderLocal(){
+    const a=areaQuery();
+    $("localGrid").innerHTML=LOCAL_LANES.map(x=>`<article class="local-card"><b>${escapeHTML(x.title)}</b><span>${a?`Searching around ${escapeHTML(localArea.mode==="manual"?a:"your selected browser location")}.`:"Select an area above, or use the official locator."}</span><div class="local-links"><a href="${escapeHTML(mapsSearch(x.query))}">Map Search ↗</a><a href="${escapeHTML(x.official)}">${escapeHTML(x.label)} ↗</a></div></article>`).join("");
+  }
   $("useLocation").addEventListener("click",()=>{
     if(!navigator.geolocation){$("locationStatus").textContent="This browser does not provide geolocation. Enter a city, state, or ZIP instead.";return}
-    $("locationStatus").textContent="Waiting for your browser's location permission…";
-    navigator.geolocation.getCurrentPosition(
-      pos=>{
-        localArea={mode:"coords",label:"Browser location",lat:Number(pos.coords.latitude),lng:Number(pos.coords.longitude)};
-        $("locationStatus").textContent="Location is ready for this tab only. Precise coordinates were not saved.";
-        renderLocal();
-      },
-      err=>{
-        localArea={mode:"none",label:"",lat:null,lng:null};
-        $("locationStatus").textContent=err.code===1?"Location permission was not granted. Enter a city, state, or ZIP instead.":"Location could not be determined. Enter a city, state, or ZIP instead.";
-        renderLocal();
-      },
-      {enableHighAccuracy:false,timeout:10000,maximumAge:300000}
-    )
+    $("locationStatus").textContent="Waiting for browser location permission…";
+    navigator.geolocation.getCurrentPosition(pos=>{
+      localArea={mode:"coords",label:"Browser location",lat:Number(pos.coords.latitude),lng:Number(pos.coords.longitude)};
+      $("locationStatus").textContent="Location is ready for this tab only. Precise coordinates were not saved.";renderLocal();
+    },err=>{
+      localArea={mode:"none",label:"",lat:null,lng:null};
+      $("locationStatus").textContent=err.code===1?"Location permission was not granted. Enter a city, state, or ZIP instead.":"Location could not be determined. Enter a city, state, or ZIP instead.";renderLocal();
+    },{enableHighAccuracy:false,timeout:10000,maximumAge:300000});
   });
   $("useManualLocation").addEventListener("click",()=>{
     const v=cleanArea($("manualLocation").value);
     if(!v){$("locationStatus").textContent="Enter a city, state, or ZIP first.";return}
-    localArea={mode:"manual",label:v,lat:null,lng:null};
-    $("locationStatus").textContent=`Search area set to ${v}. It is not saved.`;
-    renderLocal()
+    localArea={mode:"manual",label:v,lat:null,lng:null};$("locationStatus").textContent=`Search area set to ${v}. It is not saved.`;renderLocal();
   });
   $("clearLocation").addEventListener("click",()=>{
-    localArea={mode:"none",label:"",lat:null,lng:null};
-    $("manualLocation").value="";
-    $("locationStatus").textContent="Location cleared. National veteran locators still work without sharing a location here.";
-    renderLocal()
+    localArea={mode:"none",label:"",lat:null,lng:null};$("manualLocation").value="";$("locationStatus").textContent="Location cleared. Official national locators still work without sharing a location here.";renderLocal();
   });
-  renderLocal()
-}
 
-const $=id=>document.getElementById(id);
-const esc=v=>String(v).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");
-function renderNetwork(){$("networkGrid").innerHTML=NETWORK.map(s=>`<a class="network-card" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"><span class="network-mark">${esc(s.mark)}</span><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p><strong>Open public landing page ↗</strong></a>`).join("")}
-function setupCategories(){const cats=[...new Set(RESOURCES.map(r=>r.category))].sort();$("resourceCategory").innerHTML=`<option value="all">All categories</option>${cats.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join("")}`}
-function renderResources(){const q=$("resourceSearch").value.trim().toLowerCase(),cat=$("resourceCategory").value;const m=RESOURCES.filter(r=>(!q||`${r.title} ${r.category} ${r.description} ${r.tags}`.toLowerCase().includes(q))&&(cat==="all"||r.category===cat));$("resourceGrid").innerHTML=m.map(r=>`<a class="resource-card" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer"><div class="resource-meta"><span>${esc(r.category)}</span><span>${esc(r.icon)}</span></div><h3>${esc(r.title)}</h3><p>${esc(r.description)}</p><span class="resource-open">Open official resource ↗</span></a>`).join("");$("resultNote").textContent=`${m.length} of ${RESOURCES.length} official and veteran-focused resources shown.`;$("emptyState").classList.toggle("show",m.length===0)}
-function drawerEntries(q=""){q=q.trim().toLowerCase();const links=NETWORK.map(s=>({title:s.title,desc:s.description,url:s.url,mark:s.mark})).concat(RESOURCES.map(r=>({title:r.title,desc:r.description,url:r.url,mark:r.icon}))).filter(x=>!q||`${x.title} ${x.desc}`.toLowerCase().includes(q));$("drawerNav").innerHTML=links.length?`<p class="menu-group">Public Destinations</p>${links.map(x=>`<a class="drawer-link" href="${esc(x.url)}" target="_blank" rel="noopener noreferrer"><i>${esc(x.mark)}</i><span><strong>${esc(x.title)}</strong><small>${esc(x.desc)}</small></span><span>↗</span></a>`).join("")}`:`<p class="drawer-intro">No destination matched that search.</p>`}
-function setDrawer(open){$("drawer").classList.toggle("open",open);$("drawer").setAttribute("aria-hidden",String(!open));$("menuButton").setAttribute("aria-expanded",String(open));document.body.classList.toggle("menu-open",open);if(open)$("drawerSearch").focus();else $("menuButton").focus()}
-$("menuButton").addEventListener("click",()=>setDrawer(true));$("closeDrawer").addEventListener("click",()=>setDrawer(false));$("drawer").addEventListener("click",e=>{if(e.target===$("drawer"))setDrawer(false)});$("drawerNav").addEventListener("click",e=>{if(e.target.closest("a"))setDrawer(false)});$("drawerSearch").addEventListener("input",e=>drawerEntries(e.target.value));document.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("drawer").classList.contains("open"))setDrawer(false)});$("resourceSearch").addEventListener("input",renderResources);$("resourceCategory").addEventListener("change",renderResources);$("clearFilters").addEventListener("click",()=>{$("resourceSearch").value="";$("resourceCategory").value="all";renderResources();$("resourceSearch").focus()});document.addEventListener("click",e=>{const a=e.target.closest("a[href]");if(!a)return;try{const u=new URL(a.href,location.href);if(u.hostname==="github.com"||u.hostname==="www.github.com"){e.preventDefault();console.warn("Direct repository links are disabled.")}}catch(_){}});$("year").textContent=new Date().getFullYear();setupCategories();renderResources();renderNetwork();drawerEntries();setupLocation();
+  function coreDirectory(){
+    return [
+      {group:"Career Mission",icon:"01",title:"Career Mission",description:"Six-step veteran transition pathway",url:"#career-mission"},
+      {group:"Career Mission",icon:"02",title:"Military Skills Translation Notebook",description:"Local civilian-language career notes",url:"#skills-notebook"},
+      {group:"Career Mission",icon:"C",title:"Khaemenes Career Portal",description:"Assessment, reflection, professional skills, and career exploration",url:"https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/"},
+      {group:"Career Mission",icon:"PR",title:"ProReSources",description:"PROSE templates and professional tools",url:"https://vervenveda.com/proresource_hub.github.io/"},
+      {group:"Transition",icon:"E",title:"Employment Launch",description:"DOL VETS, VR&E, federal hiring, and apprenticeship",url:"#employment"},
+      {group:"Transition",icon:"ED",title:"Education & Training",description:"GI Bill resources, comparison tools, and Higher Learning",url:"#education-training"},
+      {group:"Transition",icon:"B",title:"Veteran Entrepreneurship",description:"SBA veteran business resources",url:"#entrepreneurship"},
+      {group:"Support",icon:"S",title:"Veteran Service Wings",description:"Benefits, health, housing, family, legal, and community",url:"#services"},
+      {group:"Support",icon:"O",title:"Official Resource Directory",description:"Curated authoritative government pathways",url:"#official-resources"},
+      {group:"Support",icon:"⌖",title:"Nearby Support",description:"Optional location-based veteran and workforce search",url:"#nearby"}
+    ];
+  }
+  function renderDrawer(query=""){
+    const q=normalize(query);
+    let rows=coreDirectory().filter(r=>!q||normalize(`${r.group} ${r.title} ${r.description}`).includes(q));
+    if(q){
+      rows.push(...OFFICIAL.filter(r=>normalize(`${r.title} ${r.category} ${r.description}`).includes(q)).slice(0,20).map(r=>({group:"Official Resources",icon:r.icon,title:r.title,description:r.description,url:r.url})));
+      rows.push(...tools.filter(r=>toolText(r).includes(q)).slice(0,15).map(r=>({group:"Professional Tools",icon:r.icon||"R",title:r.title,description:r.description||r.repository,url:r.url})));
+    }
+    const groups=[...new Set(rows.map(r=>r.group))];
+    $("drawerContent").innerHTML=groups.map(group=>`<p class="menu-group">${escapeHTML(group)}</p><div class="menu-list">${rows.filter(r=>r.group===group).map(r=>`<a class="menu-link" href="${r.url}"><i>${escapeHTML(r.icon)}</i><span><strong>${escapeHTML(r.title)}</strong><small>${escapeHTML(r.description)}</small></span><span>›</span></a>`).join("")}</div>`).join("")||'<p class="menu-group">No matching destination</p>';
+    $$(".menu-link",$("drawerContent")).forEach(link=>link.addEventListener("click",closeDrawer));
+  }
+  function openDrawer(){
+    $("drawerBg").classList.add("open");$("drawerBg").setAttribute("aria-hidden","false");$("menuButton").setAttribute("aria-expanded","true");document.body.classList.add("menu-open");
+    renderDrawer($("drawerSearch").value.trim());setTimeout(()=>$("drawerSearch").focus(),40);
+  }
+  function closeDrawer(){
+    $("drawerBg").classList.remove("open");$("drawerBg").setAttribute("aria-hidden","true");$("menuButton").setAttribute("aria-expanded","false");document.body.classList.remove("menu-open");
+  }
+  $("menuButton").addEventListener("click",openDrawer);
+  $("closeButton").addEventListener("click",closeDrawer);
+  $("drawerBg").addEventListener("click",e=>{if(e.target===$("drawerBg"))closeDrawer()});
+  $("drawerSearch").addEventListener("input",e=>renderDrawer(e.target.value.trim()));
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDrawer()});
+  $$("[data-scroll]").forEach(btn=>btn.addEventListener("click",()=>document.querySelector(btn.dataset.scroll)?.scrollIntoView({behavior:"smooth"})));
+
+  $("tickerControl").addEventListener("click",()=>{
+    const paused=$("ticker").dataset.paused==="true";
+    $("ticker").dataset.paused=paused?"false":"true";$("tickerControl").textContent=paused?"Ⅱ":"▶";
+    $("tickerControl").setAttribute("aria-label",paused?"Pause veteran transition ticker":"Resume veteran transition ticker");
+  });
+
+  function summary(){return{version:"3.0.0",officialResources:OFFICIAL.length,professionalTools:tools.length,federationGeneratedAt:toolMeta.generatedAt,federationError:toolMeta.error}}
+  Object.defineProperty(window,"VNVVeteransDirectoryAGI",{value:Object.freeze({
+    version:"3.0.0",
+    official:()=>[...OFFICIAL],
+    tools:()=>[...tools],
+    find:term=>{
+      const q=normalize(term);
+      return{official:OFFICIAL.filter(r=>normalize(`${r.title} ${r.category} ${r.description}`).includes(q)),tools:tools.filter(r=>toolText(r).includes(q))}
+    },
+    resolve:name=>{
+      const q=normalize(name);
+      return OFFICIAL.find(r=>normalize(r.title)===q)||tools.find(r=>normalize(r.title)===q||normalize(r.id)===q)||null;
+    },
+    summary,
+    refresh:loadTools
+  }),enumerable:false,configurable:false,writable:false});
+
+  $("year").textContent=new Date().getFullYear();
+  renderToolCategories();renderTools();loadTools();
+  renderOfficialCategories();renderOfficial();
+  loadNotebook();renderProgress();renderLocal();renderDrawer();
+})();
 </script>
 </body>
 </html>

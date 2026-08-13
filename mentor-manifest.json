@@ -1,11 +1,10 @@
 {
-  "version": 1,
+  "version": 2,
   "sourceId": "verve.veterans",
-  "name": "Veterans Resource Hub",
+  "name": "Veterans Career & Resource Hub",
   "classification": "civic",
   "mentorSearchable": true,
   "audiences": [
-    "high",
     "higher-learning",
     "adult",
     "parent"
@@ -17,15 +16,14 @@
   ],
   "homepage": "https://vervenveda.com/veterans.github.io/",
   "repository": "vervenveda/veterans.github.io",
-  "inventoryAuthority": "provisional-root-anchor",
+  "inventoryAuthority": "verified-root-sections",
   "resources": [
     {
       "id": "veterans-home",
-      "title": "Veterans Resource Hub",
-      "description": "Public gateway to veteran benefits, health care, housing, careers, education, family support, legal resources, and connected services.",
+      "title": "Veterans Career & Resource Hub",
+      "description": "Veteran-centered career transition and public-service gateway connecting career direction, skills translation, employment, education, entrepreneurship, benefits, health, housing, family, legal, and community resources.",
       "url": "https://vervenveda.com/veterans.github.io/",
       "audiences": [
-        "high",
         "higher-learning",
         "adult",
         "parent"
@@ -37,32 +35,241 @@
       ],
       "domains": [
         "veterans",
+        "career",
         "public-services",
-        "benefits",
         "education",
         "community-support"
       ],
       "skills": [
         "resource-navigation",
-        "public-service-literacy",
-        "benefits-research"
+        "career-planning",
+        "public-service-literacy"
       ],
       "tags": [
         "veterans",
+        "career-transition",
         "service-members",
         "families",
-        "public-resources",
-        "active-expansion"
+        "public-resources"
       ],
       "mentorEligible": true,
-      "featured": false,
+      "featured": true,
       "resourceType": "hub",
       "learningValue": "supplemental",
       "curricularWeight": "supplemental",
       "requiresFreshnessCheck": true,
       "dynamicContent": true,
       "highStakesDomain": "public-services"
+    },
+    {
+      "id": "veterans-career-mission",
+      "title": "Veteran Career Mission",
+      "description": "Six-stage career transition pathway: discover direction, translate service, build professional materials, train or credential, enter the market, and consider entrepreneurship.",
+      "url": "https://vervenveda.com/veterans.github.io/#career-mission",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "educator"
+      ],
+      "domains": [
+        "career",
+        "employment",
+        "veterans"
+      ],
+      "skills": [
+        "career-planning",
+        "career-exploration",
+        "transition-planning"
+      ],
+      "tags": [
+        "veterans",
+        "career",
+        "employment",
+        "transition"
+      ],
+      "mentorEligible": true,
+      "featured": true,
+      "resourceType": "career-transition"
+    },
+    {
+      "id": "veterans-skills-translation",
+      "title": "Military Skills Translation Notebook",
+      "description": "Local-only civilian-language notebook for translating military responsibilities, transferable skills, credentials, target roles, and credential gaps without storing sensitive information.",
+      "url": "https://vervenveda.com/veterans.github.io/#skills-notebook",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "educator"
+      ],
+      "domains": [
+        "career",
+        "professional-skills"
+      ],
+      "skills": [
+        "skills-translation",
+        "resume-preparation",
+        "self-reflection"
+      ],
+      "tags": [
+        "veterans",
+        "military-skills",
+        "resume",
+        "career-readiness"
+      ],
+      "mentorEligible": true,
+      "featured": true,
+      "resourceType": "career-tool",
+      "policyTags": [
+        "do-not-enter-classified-or-sensitive-information"
+      ]
+    },
+    {
+      "id": "veterans-employment",
+      "title": "Veteran Employment Launch",
+      "description": "Veteran employment pathways including DOL VETS, VA VR&E, federal hiring, and Registered Apprenticeship.",
+      "url": "https://vervenveda.com/veterans.github.io/#employment",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "educator"
+      ],
+      "domains": [
+        "career",
+        "employment",
+        "veterans"
+      ],
+      "skills": [
+        "job-search",
+        "career-navigation"
+      ],
+      "tags": [
+        "veterans",
+        "employment",
+        "federal-jobs",
+        "apprenticeship",
+        "vre"
+      ],
+      "mentorEligible": true,
+      "resourceType": "resource-hub",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "highStakesDomain": "public-services"
+    },
+    {
+      "id": "veterans-education-training",
+      "title": "Veteran Education & Training",
+      "description": "Education and training pathway connecting official VA education resources, the GI Bill Comparison Tool, Khaemenes Higher Learning, and professional preparation.",
+      "url": "https://vervenveda.com/veterans.github.io/#education-training",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "educator"
+      ],
+      "domains": [
+        "education",
+        "career",
+        "training"
+      ],
+      "skills": [
+        "education-planning",
+        "credential-research"
+      ],
+      "tags": [
+        "veterans",
+        "gi-bill",
+        "education",
+        "training",
+        "higher-learning"
+      ],
+      "mentorEligible": true,
+      "resourceType": "education-hub",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "highStakesDomain": "public-services"
+    },
+    {
+      "id": "veterans-entrepreneurship",
+      "title": "Veteran Entrepreneurship",
+      "description": "Veteran small-business pathway connecting SBA veteran business development, VBOCs, Boots to Business, and veteran contracting resources.",
+      "url": "https://vervenveda.com/veterans.github.io/#entrepreneurship",
+      "audiences": [
+        "higher-learning",
+        "adult"
+      ],
+      "roles": [
+        "student",
+        "educator"
+      ],
+      "domains": [
+        "business",
+        "career",
+        "entrepreneurship"
+      ],
+      "skills": [
+        "business-planning",
+        "entrepreneurship"
+      ],
+      "tags": [
+        "veterans",
+        "small-business",
+        "vboc",
+        "boots-to-business",
+        "contracting"
+      ],
+      "mentorEligible": true,
+      "resourceType": "business-hub",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "highStakesDomain": "public-services"
+    },
+    {
+      "id": "veterans-official-resources",
+      "title": "Veterans Official Resource Directory",
+      "description": "Curated authoritative government pathways for veteran employment, education, business, health, housing, records, legal/claims help, and community services.",
+      "url": "https://vervenveda.com/veterans.github.io/#official-resources",
+      "audiences": [
+        "higher-learning",
+        "adult",
+        "parent"
+      ],
+      "roles": [
+        "student",
+        "parent",
+        "educator"
+      ],
+      "domains": [
+        "veterans",
+        "public-services"
+      ],
+      "skills": [
+        "resource-navigation",
+        "benefits-research"
+      ],
+      "tags": [
+        "veterans",
+        "official-resources",
+        "va",
+        "dol",
+        "sba"
+      ],
+      "mentorEligible": true,
+      "resourceType": "directory",
+      "requiresFreshnessCheck": true,
+      "dynamicContent": true,
+      "highStakesDomain": "public-services"
     }
   ],
-  "mentorNotes": "PROVISIONAL FEDERATION ANCHOR. This repository is under active expansion. The root landing page is the only inventory authority exposed by this manifest at this stage. Do not infer that unlisted child apps, courses, tools, or directories are absent, obsolete, or non-recommendable. Replace this provisional inventory with a verified deep manifest after the repository upgrade pass is complete."
+  "mentorNotes": "VERIFIED ROOT-SECTION INVENTORY AFTER AUGUST 2026 CAREER MODERNIZATION. The Veterans Hub now exposes its major career-transition and official-resource sections as distinct anchors. Official program links remain freshness-sensitive; verify current agency information before high-stakes guidance."
 }
