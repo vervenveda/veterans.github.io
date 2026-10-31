@@ -66,24 +66,6 @@ button{cursor:pointer}
 .skip-link{position:fixed;top:9px;left:9px;z-index:4000;transform:translateY(-170%);padding:9px 14px;border-radius:var(--radius);color:#fff;background:var(--ink)}
 .skip-link:focus{transform:none}
 
-/* VNV network ticker */
-.network-ticker{
-  position:sticky;top:0;z-index:1500;height:var(--ticker-height);display:grid;
-  grid-template-columns:minmax(0,1fr) 40px;overflow:hidden;color:#f4ead1;
-  background:linear-gradient(90deg,#07101d,#10243b 48%,#07101d);
-  border-bottom:1px solid rgba(255,255,255,.13);box-shadow:0 4px 14px rgba(6,15,27,.15)
-}
-.network-ticker-viewport{min-width:0;overflow:hidden;mask-image:linear-gradient(90deg,transparent 0,#000 27px,#000 calc(100% - 27px),transparent 100%)}
-.network-ticker-track{width:max-content;height:100%;display:flex;align-items:center;white-space:nowrap;animation:ticker 28s linear infinite}
-.network-ticker:hover .network-ticker-track,.network-ticker:focus-within .network-ticker-track,.network-ticker[data-paused="true"] .network-ticker-track{animation-play-state:paused}
-.network-ticker-set{height:100%;display:flex;align-items:center;gap:22px;padding-inline:11px}
-.network-ticker-label{color:var(--gold-pale);font-family:var(--ceremonial);font-size:10px;letter-spacing:.25em;text-transform:uppercase}
-.network-ticker-app{min-height:28px;display:inline-flex;align-items:center;gap:7px;padding:0;border:0;background:transparent;color:#eef3f7;font-size:11px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
-.network-ticker-app::before{content:"";width:3px;height:3px;border-radius:50%;background:var(--gold)}
-.network-ticker-app:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
-.ticker-control{width:40px;height:var(--ticker-height);display:grid;place-items:center;border:0;border-left:1px solid rgba(255,255,255,.13);color:#f4ead1;background:rgba(0,0,0,.14)}
-@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
 /* VNV header */
 .site-header{
   position:sticky;top:var(--ticker-height);z-index:1400;height:var(--header-height);
@@ -316,32 +298,6 @@ footer{padding:36px 20px;color:rgba(255,255,255,.64);background:#030a11;border-t
 </div>
 <a class="skip-link" href="#main">Skip to main content</a>
 
-<div class="network-ticker" id="ticker">
-  <div class="network-ticker-viewport">
-    <div class="network-ticker-track">
-      <div class="network-ticker-set">
-        <span class="network-ticker-label">Veteran Transition Network</span>
-        <a class="network-ticker-app" href="#career-mission">Career Mission</a>
-        <a class="network-ticker-app" href="#skills-notebook">Translate Skills</a>
-        <a class="network-ticker-app" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/">Career Portal</a>
-        <a class="network-ticker-app" href="#education-training">Education & Training</a>
-        <a class="network-ticker-app" href="#entrepreneurship">Entrepreneurship</a>
-        <a class="network-ticker-app" href="#services">Veteran Services</a>
-      </div>
-      <div class="network-ticker-set" aria-hidden="true">
-        <span class="network-ticker-label">Veteran Transition Network</span>
-        <a tabindex="-1" class="network-ticker-app" href="#career-mission">Career Mission</a>
-        <a tabindex="-1" class="network-ticker-app" href="#skills-notebook">Translate Skills</a>
-        <a tabindex="-1" class="network-ticker-app" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/">Career Portal</a>
-        <a tabindex="-1" class="network-ticker-app" href="#education-training">Education & Training</a>
-        <a tabindex="-1" class="network-ticker-app" href="#entrepreneurship">Entrepreneurship</a>
-        <a tabindex="-1" class="network-ticker-app" href="#services">Veteran Services</a>
-      </div>
-    </div>
-  </div>
-  <button class="ticker-control" id="tickerControl" aria-label="Pause veteran transition ticker">Ⅱ</button>
-</div>
-
 <header class="site-header">
   <div class="shell header-inner">
     <a class="brand" href="#top" aria-label="Veterans Career and Resource Hub home">
@@ -352,12 +308,12 @@ footer{padding:36px 20px;color:rgba(255,255,255,.64);background:#030a11;border-t
       </span>
     </a>
     <nav class="header-links" aria-label="Primary navigation">
-      <a class="career-link" href="#career-mission">Career Mission</a>
-      <a href="#skills-notebook">Skills Translator</a>
+      <a class="career-link" href="#career-mission" data-ticker data-ticker-label="Career Mission">Career Mission</a>
+      <a href="#skills-notebook" data-ticker data-ticker-label="Translate Skills">Skills Translator</a>
       <a href="#employment">Employment</a>
-      <a href="#education-training">Education</a>
-      <a href="#entrepreneurship">Business</a>
-      <a href="#services">Services</a>
+      <a href="#education-training" data-ticker data-ticker-label="Education & Training">Education</a>
+      <a href="#entrepreneurship" data-ticker data-ticker-label="Entrepreneurship">Business</a>
+      <a href="#services" data-ticker data-ticker-label="Veteran Services">Services</a>
     </nav>
     <button class="menu-button" id="menuButton" type="button" aria-label="Open Veterans directory" aria-expanded="false" aria-controls="drawerBg">
       <span class="menu-lines" aria-hidden="true"></span>
@@ -400,7 +356,7 @@ footer{padding:36px 20px;color:rgba(255,255,255,.64);background:#030a11;border-t
         </div>
         <p class="hero-lead">A veteran-centered transition workspace for turning military experience into civilian career direction, professional materials, education or training, meaningful employment, entrepreneurship, and a stable next chapter—without losing access to benefits, health, housing, family, legal, or community support.</p>
         <div class="hero-actions">
-          <a class="button button-career" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/">Open Career Portal</a>
+          <a class="button button-career" href="https://vervenveda.com/Khaemenes_Higher_Learning.github.io/Career/" data-ticker data-ticker-label="Career Portal">Open Career Portal</a>
           <a class="button button-primary" href="#skills-notebook">Translate My Experience</a>
           <a class="button button-secondary" href="#official-resources">Official Veteran Resources</a>
         </div>
@@ -1037,12 +993,6 @@ footer{padding:36px 20px;color:rgba(255,255,255,.64);background:#030a11;border-t
   document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDrawer()});
   $$("[data-scroll]").forEach(btn=>btn.addEventListener("click",()=>document.querySelector(btn.dataset.scroll)?.scrollIntoView({behavior:"smooth"})));
 
-  $("tickerControl").addEventListener("click",()=>{
-    const paused=$("ticker").dataset.paused==="true";
-    $("ticker").dataset.paused=paused?"false":"true";$("tickerControl").textContent=paused?"Ⅱ":"▶";
-    $("tickerControl").setAttribute("aria-label",paused?"Pause veteran transition ticker":"Resume veteran transition ticker");
-  });
-
   function summary(){return{version:"3.0.0",officialResources:OFFICIAL.length,professionalTools:tools.length,federationGeneratedAt:toolMeta.generatedAt,federationError:toolMeta.error}}
   Object.defineProperty(window,"VNVVeteransDirectoryAGI",{value:Object.freeze({
     version:"3.0.0",
@@ -1067,6 +1017,10 @@ footer{padding:36px 20px;color:rgba(255,255,255,.64);background:#030a11;border-t
 })();
 </script>
 <script src="https://vervenveda.com/assets/vnv-support.js" defer></script>
+
+<script src="https://vervenveda.com/assets/vnv-333-ticker.js"></script>
+<script src="https://vervenveda.com/assets/vnv-ticker-autopopulate.js" data-vnv-ticker-autopopulate></script>
+<script>VNV_TICKER.autoPopulate({label:"Veterans Quick Links",max:12});</script>
 <script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
 </body>
 </html>
