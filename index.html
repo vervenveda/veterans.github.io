@@ -269,6 +269,99 @@ footer{padding:36px 20px;color:rgba(255,255,255,.64);background:#030a11;border-t
 .vnv-global-panel{position:absolute;right:0;top:36px;width:min(300px,calc(100vw - 20px));padding:10px;border:1px solid rgba(238,232,220,.22);border-radius:7px;background:#17201f;box-shadow:0 18px 40px rgba(0,0,0,.28)}.vnv-global-panel p{margin:3px 5px 8px;color:#aaa294;font-size:9px;letter-spacing:.1em;text-transform:uppercase}.vnv-global-panel a{display:block;padding:9px 10px;border-radius:5px;color:#eee8dc;font-size:11px}.vnv-global-panel a:hover,.vnv-global-panel a:focus-visible{background:#22302e}
 @media(max-width:760px){.vnv-global-strip{grid-template-columns:minmax(0,1fr) auto}.vnv-global-links{display:none}.vnv-global-copy small{display:none}}@media print{.vnv-global-strip{display:none!important}}
 </style>
+
+<!-- Veterans patriotic visual layer: no changes to functional content or storage. -->
+<style id="vnv-veterans-patriotic-hero-2026-11">
+  :root{
+    --veterans-midnight:#101d30;
+    --veterans-burgundy:#73252e;
+    --veterans-cream:#fbf1df;
+    --veterans-gold:#d5b778;
+  }
+  body{background:#f7f1e5}
+  .hero{
+    position:relative;
+    isolation:isolate;
+    min-height:calc(100svh - var(--sticky-stack) - 66px);
+    border-bottom:5px solid var(--veterans-burgundy);
+    background:
+      radial-gradient(ellipse at 76% 17%,rgba(255,227,171,.72),transparent 40%),
+      linear-gradient(115deg,rgba(9,20,37,.91) 0%,rgba(17,34,55,.78) 48%,rgba(35,30,36,.48) 100%),
+      repeating-linear-gradient(160deg,#a33b43 0 55px,#f2e8d8 55px 110px);
+    color:var(--veterans-cream);
+  }
+  .hero::before{
+    content:"★  ★  ★  ★  ★  ★\A  ★  ★  ★  ★  ★\A ★  ★  ★  ★  ★  ★\A  ★  ★  ★  ★  ★";
+    white-space:pre;
+    position:absolute;
+    inset:7% auto auto 1%;
+    width:min(46%,580px);
+    overflow:hidden;
+    transform:rotate(-8deg);
+    font:400 clamp(22px,3.8vw,52px)/1.7 Georgia,serif;
+    letter-spacing:.32em;
+    color:rgba(255,249,226,.14);
+    pointer-events:none;
+    z-index:-1;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    inset:auto 0 0;
+    height:35%;
+    pointer-events:none;
+    z-index:-1;
+    background:linear-gradient(180deg,transparent,rgba(7,15,27,.68));
+  }
+  .hero-inner{position:relative;z-index:1}
+  .hero-stage{gap:clamp(23px,3.5vw,34px)}
+  .hero h1{color:#fff6e6;text-shadow:0 3px 22px rgba(0,0,0,.32);font-size:clamp(52px,7vw,96px)}
+  .hero .eyebrow{color:#efd39c;font-size:16px;letter-spacing:.13em}
+  .hero .hero-subtitle{color:#f1d7a5;font-size:16px;line-height:1.5}
+  .hero .hero-lead{
+    color:#fff5e7;
+    font-family:var(--sans);
+    font-size:clamp(17px,1.5vw,21px);
+    max-width:880px;
+    line-height:1.65;
+    text-shadow:0 1px 10px rgba(0,0,0,.4);
+  }
+  .hero .button{
+    font-size:16px;
+    min-height:52px;
+    font-weight:500;
+    padding:12px 18px;
+    line-height:1.35;
+  }
+  .hero .button-career{color:#152338;background:linear-gradient(135deg,#f7e6bc,#d7b16e);border-color:#e3c48d}
+  .hero .button-primary{background:var(--veterans-burgundy);color:#fffaf1;border-color:#d8b77a}
+  .hero .button-secondary{background:rgba(12,27,47,.88);color:#fff8e9;border-color:#e3c48d}
+  .hero .button:hover{filter:brightness(1.12)}
+  .hero .hero-stat-grid{
+    background:rgba(10,24,42,.89);
+    border:1px solid rgba(222,190,128,.65);
+    box-shadow:0 16px 48px rgba(0,0,0,.22);
+    backdrop-filter:blur(6px);
+  }
+  .hero .hero-stat{border-left-color:rgba(234,207,152,.28)}
+  .hero .hero-stat strong{color:#f3d8a5;font-size:20px}
+  .hero .hero-stat span{color:#f8f1e8;font-size:16px;line-height:1.5}
+  .hero .scroll-cue{color:#f2d6a8;font-size:16px}
+  .section:not(.section-dark) .heading h2{color:#13283f}
+  .section:not(.section-dark) .kicker{color:#8e3940}
+  .mission-card{border-top-color:var(--veterans-burgundy)}
+  #veterans-featured-ecosystem{border-block:2px solid #cfb68c;background:linear-gradient(180deg,#f7f0e5,#fffaf0)}
+  @media(max-width:750px){
+    .hero{background:
+      linear-gradient(110deg,rgba(9,20,37,.92),rgba(23,35,54,.77)),
+      repeating-linear-gradient(155deg,#a33b43 0 35px,#f2e8d8 35px 70px)}
+    .hero::before{width:90%;font-size:24px;opacity:.6}
+    .hero-inner{padding-top:65px}
+    .hero .hero-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .hero .hero-stat:nth-child(odd){border-left:0}
+  }
+  @media(prefers-reduced-motion:reduce){.hero .button{transition:none}}
+</style>
 </head>
 <body id="top">
 <div class="vnv-global-strip" data-vnv-global-strip>
